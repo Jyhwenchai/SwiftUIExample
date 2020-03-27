@@ -12,16 +12,18 @@ import SwiftUI
  `func animation(_ animation: Animation?) -> some View`
  
  将给定的动画应用于视图中的所有可动画的值。
+ 
+ 在 SwiftUI 中几乎所有的属性都是可动画的，包括旋转、缩放、位移、透明度、圆角、颜色等等。你可以一一的进行尝试
  */
 struct SU_Animation: View {
-    @State var opacity = 0.0
+
     var body: some View {
-        Text("Hello, World!")
-            .opacity(opacity)
-            .onAppear(perform: {
-                self.opacity = 1
-            })
-            .animation(Animation.easeIn(duration: 2))
+        NavigationView {
+            List(animationRowData) { item in
+                NavigationLink(item.title, destination: item.destination)
+            }
+            .navigationBarTitle("Animations")
+        }
     }
 }
 
@@ -30,3 +32,16 @@ struct SU_Animation_Previews: PreviewProvider {
         SU_Animation()
     }
 }
+
+struct AnimationRow: Identifiable {
+    var id = UUID()
+    var title: String
+    var destination: AnyView
+    
+}
+
+private let animationRowData = [
+    AnimationRow(title: "Animation 01", destination: AnyView(SU_Animation_01())),
+    AnimationRow(title: "Animation 02", destination: AnyView(SU_Animation_02())),
+    AnimationRow(title: "Animation 03", destination: AnyView(SU_Animation_03()))
+]

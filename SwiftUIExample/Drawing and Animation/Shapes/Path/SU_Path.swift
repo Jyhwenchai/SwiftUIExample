@@ -26,7 +26,7 @@ struct SU_Path: View {
                 pathWithCurve()
                 pathWithQuadCurve()
             }
-        }
+        }.padding()
     }
     
     func pathWithRect() -> some View {

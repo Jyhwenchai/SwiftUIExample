@@ -169,6 +169,10 @@
 		66A0EA47242B3A69007C6B63 /* SU_Interpolation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A0EA46242B3A69007C6B63 /* SU_Interpolation.swift */; };
 		66A0EA4B242B501B007C6B63 /* SU_ViewBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A0EA4A242B501B007C6B63 /* SU_ViewBuilder.swift */; };
 		66A0EA4D242B52FB007C6B63 /* SU_ViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A0EA4C242B52FB007C6B63 /* SU_ViewModifier.swift */; };
+		66A0EA50242C46E9007C6B63 /* SU_Animation_01.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A0EA4F242C46E9007C6B63 /* SU_Animation_01.swift */; };
+		66A0EA52242C53D7007C6B63 /* SU_Animation_02.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A0EA51242C53D7007C6B63 /* SU_Animation_02.swift */; };
+		66A0EA54242C784A007C6B63 /* SU_Animation_03.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A0EA53242C784A007C6B63 /* SU_Animation_03.swift */; };
+		66A0EA56242C7B2C007C6B63 /* SU_Shape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A0EA55242C7B2C007C6B63 /* SU_Shape.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -340,6 +344,10 @@
 		66A0EA46242B3A69007C6B63 /* SU_Interpolation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SU_Interpolation.swift; sourceTree = "<group>"; };
 		66A0EA4A242B501B007C6B63 /* SU_ViewBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SU_ViewBuilder.swift; sourceTree = "<group>"; };
 		66A0EA4C242B52FB007C6B63 /* SU_ViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SU_ViewModifier.swift; sourceTree = "<group>"; };
+		66A0EA4F242C46E9007C6B63 /* SU_Animation_01.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SU_Animation_01.swift; sourceTree = "<group>"; };
+		66A0EA51242C53D7007C6B63 /* SU_Animation_02.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SU_Animation_02.swift; sourceTree = "<group>"; };
+		66A0EA53242C784A007C6B63 /* SU_Animation_03.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SU_Animation_03.swift; sourceTree = "<group>"; };
+		66A0EA55242C7B2C007C6B63 /* SU_Shape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SU_Shape.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -469,6 +477,7 @@
 		667748BC241B5DE70019CB9E /* Shapes */ = {
 			isa = PBXGroup;
 			children = (
+				66A0EA55242C7B2C007C6B63 /* SU_Shape.swift */,
 				667748BD241B5DF50019CB9E /* SU_Rectangle.swift */,
 				667748BF241B64B20019CB9E /* SU_RoundedRectangle.swift */,
 				667748C1241B674E0019CB9E /* SU_Circle.swift */,
@@ -682,6 +691,7 @@
 			children = (
 				6677493F242379C00019CB9E /* SU_Animation.swift */,
 				6677494124237E080019CB9E /* SU_Transition.swift */,
+				66A0EA4E242C3C4C007C6B63 /* Animations */,
 			);
 			path = "Adding Animations to a View";
 			sourceTree = "<group>";
@@ -903,6 +913,16 @@
 			path = Image;
 			sourceTree = "<group>";
 		};
+		66A0EA4E242C3C4C007C6B63 /* Animations */ = {
+			isa = PBXGroup;
+			children = (
+				66A0EA4F242C46E9007C6B63 /* SU_Animation_01.swift */,
+				66A0EA51242C53D7007C6B63 /* SU_Animation_02.swift */,
+				66A0EA53242C784A007C6B63 /* SU_Animation_03.swift */,
+			);
+			path = Animations;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1003,6 +1023,7 @@
 				6677492F242364A40019CB9E /* SU_MultilineTextAlignment.swift in Sources */,
 				66A0EA41242B2D07007C6B63 /* SU_Resizable.swift in Sources */,
 				667748D3241B8B1E0019CB9E /* SU_Color.swift in Sources */,
+				66A0EA50242C46E9007C6B63 /* SU_Animation_01.swift in Sources */,
 				667748882418CFE50019CB9E /* SU_Stepper.swift in Sources */,
 				667748AC241A301F0019CB9E /* SU_TabView.swift in Sources */,
 				6677489C241A0D710019CB9E /* SU_Form.swift in Sources */,
@@ -1030,6 +1051,7 @@
 				667748D0241B88F10019CB9E /* SU_TransformedShape.swift in Sources */,
 				667748802418B8C90019CB9E /* SU_Toggle.swift in Sources */,
 				667748DD241F14820019CB9E /* SU_Path.swift in Sources */,
+				66A0EA52242C53D7007C6B63 /* SU_Animation_02.swift in Sources */,
 				667748B5241A3D4B0019CB9E /* SU_sheet.swift in Sources */,
 				667748D5241B8C520019CB9E /* SU_ImagePaint.swift in Sources */,
 				6677498D2428A2F60019CB9E /* SU_TextFieldStyle.swift in Sources */,
@@ -1108,6 +1130,7 @@
 				667748842418C2220019CB9E /* SU_DatePicker.swift in Sources */,
 				667749722424C7320019CB9E /* SU_ColorInvert.swift in Sources */,
 				667748C2241B674E0019CB9E /* SU_Circle.swift in Sources */,
+				66A0EA56242C7B2C007C6B63 /* SU_Shape.swift in Sources */,
 				6677494D24246BA30019CB9E /* SU_SimultaneousGesture.swift in Sources */,
 				6677499F2428B6C20019CB9E /* SU_NavigationBarTitle.swift in Sources */,
 				6677496C2424C5520019CB9E /* SU_Opacity.swift in Sources */,
@@ -1115,6 +1138,7 @@
 				667749742424C7B90019CB9E /* SU_ColorMultiply.swift in Sources */,
 				667749B32429ADEB0019CB9E /* SU_Preference.swift in Sources */,
 				667749B92429FDBA0019CB9E /* SU_TransformPreference.swift in Sources */,
+				66A0EA54242C784A007C6B63 /* SU_Animation_03.swift in Sources */,
 				6677490824222C1B0019CB9E /* SU_Border.swift in Sources */,
 				667748AA241A292A0019CB9E /* SU_NavigationView.swift in Sources */,
 				667748942418E8B40019CB9E /* SU_List.swift in Sources */,
