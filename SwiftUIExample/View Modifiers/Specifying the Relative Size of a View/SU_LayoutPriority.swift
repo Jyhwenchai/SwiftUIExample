@@ -7,7 +7,9 @@
 //
 
 import SwiftUI
-
+/**
+ 类似于 AutoLayout 中的约束优先级，优先级越高在有限的空间内所能占据的布局范围越大，反之优先级小的布局空间可能被压缩
+ */
 struct SU_LayoutPriority: View {
     
     // 修改各 View 的 layoutPriority 对比效果
