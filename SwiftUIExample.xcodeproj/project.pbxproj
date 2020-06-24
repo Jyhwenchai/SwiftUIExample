@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		660C2C64243C852D003305F1 /* Buttons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 660C2C63243C852D003305F1 /* Buttons.swift */; };
 		6632ABD024178BCD003AC252 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6632ABCF24178BCD003AC252 /* AppDelegate.swift */; };
 		6632ABD224178BCD003AC252 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6632ABD124178BCD003AC252 /* SceneDelegate.swift */; };
 		6632ABD424178BCD003AC252 /* SU_Text.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6632ABD324178BCD003AC252 /* SU_Text.swift */; };
@@ -173,9 +174,27 @@
 		66A0EA52242C53D7007C6B63 /* SU_Animation_02.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A0EA51242C53D7007C6B63 /* SU_Animation_02.swift */; };
 		66A0EA54242C784A007C6B63 /* SU_Animation_03.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A0EA53242C784A007C6B63 /* SU_Animation_03.swift */; };
 		66A0EA56242C7B2C007C6B63 /* SU_Shape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A0EA55242C7B2C007C6B63 /* SU_Shape.swift */; };
+		66A4432224A1D40C008CEA36 /* SU_App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A4432124A1D40C008CEA36 /* SU_App.swift */; };
+		66A4432424A1D919008CEA36 /* SU_OpenURLAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A4432324A1D919008CEA36 /* SU_OpenURLAction.swift */; };
+		66A4432724A1DA53008CEA36 /* SU_TextEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A4432624A1DA53008CEA36 /* SU_TextEditor.swift */; };
+		66B4C68D24A200B1000057A2 /* SU_ProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66B4C68C24A200B1000057A2 /* SU_ProgressView.swift */; };
+		66B4C68F24A206A5000057A2 /* SU_Label.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66B4C68E24A206A5000057A2 /* SU_Label.swift */; };
+		66B4C69124A20916000057A2 /* SU_Link.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66B4C69024A20916000057A2 /* SU_Link.swift */; };
+		66B4C69324A209E4000057A2 /* SU_LazyHStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66B4C69224A209E4000057A2 /* SU_LazyHStack.swift */; };
+		66B4C69524A20B41000057A2 /* SU_LazyVStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66B4C69424A20B41000057A2 /* SU_LazyVStack.swift */; };
+		66B4C69724A20BC4000057A2 /* SU_LazyHGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66B4C69624A20BC4000057A2 /* SU_LazyHGrid.swift */; };
+		66B4C69924A20C8D000057A2 /* SU_LazyVGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66B4C69824A20C8D000057A2 /* SU_LazyVGrid.swift */; };
+		66B4C69D24A2E957000057A2 /* SU_ScrollViewReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66B4C69C24A2E957000057A2 /* SU_ScrollViewReader.swift */; };
+		66B4C69F24A2F445000057A2 /* SU_TabStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66B4C69E24A2F445000057A2 /* SU_TabStyle.swift */; };
+		66B4C6A124A2F868000057A2 /* SU_GroupBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66B4C6A024A2F868000057A2 /* SU_GroupBox.swift */; };
+		66B4C6A324A2FB31000057A2 /* SU_OutlineGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66B4C6A224A2FB31000057A2 /* SU_OutlineGroup.swift */; };
+		66B4C6A524A2FD5C000057A2 /* SU_DisclosureGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66B4C6A424A2FD5C000057A2 /* SU_DisclosureGroup.swift */; };
+		66F3B86324A1F183005B6FC6 /* SU_SignInWithAppleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F3B86224A1F183005B6FC6 /* SU_SignInWithAppleButton.swift */; };
+		66F3B86524A1F378005B6FC6 /* SU_ColorPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F3B86424A1F378005B6FC6 /* SU_ColorPicker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		660C2C63243C852D003305F1 /* Buttons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Buttons.swift; sourceTree = "<group>"; };
 		6632ABCC24178BCD003AC252 /* SwiftUIExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6632ABCF24178BCD003AC252 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6632ABD124178BCD003AC252 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -348,6 +367,23 @@
 		66A0EA51242C53D7007C6B63 /* SU_Animation_02.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SU_Animation_02.swift; sourceTree = "<group>"; };
 		66A0EA53242C784A007C6B63 /* SU_Animation_03.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SU_Animation_03.swift; sourceTree = "<group>"; };
 		66A0EA55242C7B2C007C6B63 /* SU_Shape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SU_Shape.swift; sourceTree = "<group>"; };
+		66A4432124A1D40C008CEA36 /* SU_App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SU_App.swift; sourceTree = "<group>"; };
+		66A4432324A1D919008CEA36 /* SU_OpenURLAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SU_OpenURLAction.swift; sourceTree = "<group>"; };
+		66A4432624A1DA53008CEA36 /* SU_TextEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SU_TextEditor.swift; sourceTree = "<group>"; };
+		66B4C68C24A200B1000057A2 /* SU_ProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SU_ProgressView.swift; sourceTree = "<group>"; };
+		66B4C68E24A206A5000057A2 /* SU_Label.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SU_Label.swift; sourceTree = "<group>"; };
+		66B4C69024A20916000057A2 /* SU_Link.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SU_Link.swift; sourceTree = "<group>"; };
+		66B4C69224A209E4000057A2 /* SU_LazyHStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SU_LazyHStack.swift; sourceTree = "<group>"; };
+		66B4C69424A20B41000057A2 /* SU_LazyVStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SU_LazyVStack.swift; sourceTree = "<group>"; };
+		66B4C69624A20BC4000057A2 /* SU_LazyHGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SU_LazyHGrid.swift; sourceTree = "<group>"; };
+		66B4C69824A20C8D000057A2 /* SU_LazyVGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SU_LazyVGrid.swift; sourceTree = "<group>"; };
+		66B4C69C24A2E957000057A2 /* SU_ScrollViewReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SU_ScrollViewReader.swift; sourceTree = "<group>"; };
+		66B4C69E24A2F445000057A2 /* SU_TabStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SU_TabStyle.swift; sourceTree = "<group>"; };
+		66B4C6A024A2F868000057A2 /* SU_GroupBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SU_GroupBox.swift; sourceTree = "<group>"; };
+		66B4C6A224A2FB31000057A2 /* SU_OutlineGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SU_OutlineGroup.swift; sourceTree = "<group>"; };
+		66B4C6A424A2FD5C000057A2 /* SU_DisclosureGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SU_DisclosureGroup.swift; sourceTree = "<group>"; };
+		66F3B86224A1F183005B6FC6 /* SU_SignInWithAppleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SU_SignInWithAppleButton.swift; sourceTree = "<group>"; };
+		66F3B86424A1F378005B6FC6 /* SU_ColorPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SU_ColorPicker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -361,6 +397,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		660C2C61243C84DF003305F1 /* UIKitPreview */ = {
+			isa = PBXGroup;
+			children = (
+				66A0EA2B242AEC90007C6B63 /* UIViewControllerPreview.swift */,
+				66A0EA2D242AECA9007C6B63 /* UIVIewPreview.swift */,
+			);
+			path = UIKitPreview;
+			sourceTree = "<group>";
+		};
+		660C2C62243C8513003305F1 /* CustomView */ = {
+			isa = PBXGroup;
+			children = (
+				660C2C63243C852D003305F1 /* Buttons.swift */,
+			);
+			path = CustomView;
+			sourceTree = "<group>";
+		};
 		6632ABC324178BCD003AC252 = {
 			isa = PBXGroup;
 			children = (
@@ -384,6 +437,7 @@
 		6632ABCE24178BCD003AC252 /* SwiftUIExample */ = {
 			isa = PBXGroup;
 			children = (
+				66A4431F24A1CDE9008CEA36 /* New in iOS 14 */,
 				66A0EA2A242AEC7A007C6B63 /* Others */,
 				6632ABE324178F4A003AC252 /* View and Controls */,
 				667748922418E3C10019CB9E /* View Layout and Presentation */,
@@ -862,8 +916,8 @@
 		66A0EA2A242AEC7A007C6B63 /* Others */ = {
 			isa = PBXGroup;
 			children = (
-				66A0EA2B242AEC90007C6B63 /* UIViewControllerPreview.swift */,
-				66A0EA2D242AECA9007C6B63 /* UIVIewPreview.swift */,
+				660C2C62243C8513003305F1 /* CustomView */,
+				660C2C61243C84DF003305F1 /* UIKitPreview */,
 			);
 			path = Others;
 			sourceTree = "<group>";
@@ -923,6 +977,46 @@
 			path = Animations;
 			sourceTree = "<group>";
 		};
+		66A4431F24A1CDE9008CEA36 /* New in iOS 14 */ = {
+			isa = PBXGroup;
+			children = (
+				66A4432024A1D3FA008CEA36 /* App Structure and Behavior */,
+				66A4432524A1DA3A008CEA36 /* View and Controls */,
+			);
+			path = "New in iOS 14";
+			sourceTree = "<group>";
+		};
+		66A4432024A1D3FA008CEA36 /* App Structure and Behavior */ = {
+			isa = PBXGroup;
+			children = (
+				66A4432124A1D40C008CEA36 /* SU_App.swift */,
+				66A4432324A1D919008CEA36 /* SU_OpenURLAction.swift */,
+			);
+			path = "App Structure and Behavior";
+			sourceTree = "<group>";
+		};
+		66A4432524A1DA3A008CEA36 /* View and Controls */ = {
+			isa = PBXGroup;
+			children = (
+				66A4432624A1DA53008CEA36 /* SU_TextEditor.swift */,
+				66F3B86224A1F183005B6FC6 /* SU_SignInWithAppleButton.swift */,
+				66F3B86424A1F378005B6FC6 /* SU_ColorPicker.swift */,
+				66B4C68C24A200B1000057A2 /* SU_ProgressView.swift */,
+				66B4C68E24A206A5000057A2 /* SU_Label.swift */,
+				66B4C69024A20916000057A2 /* SU_Link.swift */,
+				66B4C69224A209E4000057A2 /* SU_LazyHStack.swift */,
+				66B4C69424A20B41000057A2 /* SU_LazyVStack.swift */,
+				66B4C69624A20BC4000057A2 /* SU_LazyHGrid.swift */,
+				66B4C69824A20C8D000057A2 /* SU_LazyVGrid.swift */,
+				66B4C69C24A2E957000057A2 /* SU_ScrollViewReader.swift */,
+				66B4C69E24A2F445000057A2 /* SU_TabStyle.swift */,
+				66B4C6A024A2F868000057A2 /* SU_GroupBox.swift */,
+				66B4C6A224A2FB31000057A2 /* SU_OutlineGroup.swift */,
+				66B4C6A424A2FD5C000057A2 /* SU_DisclosureGroup.swift */,
+			);
+			path = "View and Controls";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -933,6 +1027,7 @@
 				6632ABC824178BCD003AC252 /* Sources */,
 				6632ABC924178BCD003AC252 /* Frameworks */,
 				6632ABCA24178BCD003AC252 /* Resources */,
+				66A4431E24A1CD05008CEA36 /* Integrate Reveal Server */,
 			);
 			buildRules = (
 			);
@@ -990,6 +1085,27 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		66A4431E24A1CD05008CEA36 /* Integrate Reveal Server */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Integrate Reveal Server";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "REVEAL_APP_PATH=$(mdfind kMDItemCFBundleIdentifier=\"com.ittybittyapps.Reveal2\" | head -n 1)\nBUILD_SCRIPT_PATH=\"${REVEAL_APP_PATH}/Contents/SharedSupport/Scripts/reveal_server_build_phase.sh\"\nif [ \"${REVEAL_APP_PATH}\" -a -e \"${BUILD_SCRIPT_PATH}\" ]; then\n\"${BUILD_SCRIPT_PATH}\"\nelse\necho \"Reveal Server not loaded: Cannot find a compatible Reveal app.\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		6632ABC824178BCD003AC252 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -1000,6 +1116,7 @@
 				66774905242228620019CB9E /* SU_Overlay.swift in Sources */,
 				6677498F2428A49F0019CB9E /* SU_ToggleStyle.swift in Sources */,
 				6677498B2428A0840019CB9E /* SU_PickerStyle.swift in Sources */,
+				66A4432424A1D919008CEA36 /* SU_OpenURLAction.swift in Sources */,
 				6677493924236F1C0019CB9E /* SU_ TextContentType.swift in Sources */,
 				6677492224234AD30019CB9E /* SU_Rotation3DEffect.swift in Sources */,
 				66A0EA2C242AEC90007C6B63 /* UIViewControllerPreview.swift in Sources */,
@@ -1010,6 +1127,7 @@
 				667748CC241B84B50019CB9E /* SU_RotatedShape.swift in Sources */,
 				667749622424B4240019CB9E /* SU_ColorScheme.swift in Sources */,
 				6677491B242341710019CB9E /* SU_AspectRatio.swift in Sources */,
+				66B4C6A524A2FD5C000057A2 /* SU_DisclosureGroup.swift in Sources */,
 				6677493D242376810019CB9E /* SU_DisableAutocorrection.swift in Sources */,
 				6677494224237E080019CB9E /* SU_Transition.swift in Sources */,
 				667748C4241B6CD50019CB9E /* SU_Ellipse.swift in Sources */,
@@ -1027,6 +1145,7 @@
 				667748882418CFE50019CB9E /* SU_Stepper.swift in Sources */,
 				667748AC241A301F0019CB9E /* SU_TabView.swift in Sources */,
 				6677489C241A0D710019CB9E /* SU_Form.swift in Sources */,
+				66B4C69924A20C8D000057A2 /* SU_LazyVGrid.swift in Sources */,
 				6677493B2423754C0019CB9E /* SU_AutoCapitalization.swift in Sources */,
 				667748CA241B7E800019CB9E /* SU_ScaledShape.swift in Sources */,
 				6677493524236A430019CB9E /* SU_LineSpacing.swift in Sources */,
@@ -1037,6 +1156,7 @@
 				66774920242349830019CB9E /* SU_RotationEffect.swift in Sources */,
 				6677495C2424A1A80019CB9E /* SU_OnReceive.swift in Sources */,
 				667748D9241B946B0019CB9E /* SU_AngularGradient.swift in Sources */,
+				66B4C69324A209E4000057A2 /* SU_LazyHStack.swift in Sources */,
 				6632ABD024178BCD003AC252 /* AppDelegate.swift in Sources */,
 				667749762424C8120019CB9E /* SU_BlendMode.swift in Sources */,
 				66A0EA27242A1607007C6B63 /* SU_PreviewLayout.swift in Sources */,
@@ -1048,7 +1168,9 @@
 				667361B42417A131006D5B11 /* SU_SecureField.swift in Sources */,
 				66774987242899FA0019CB9E /* SU_DatePickerStyle.swift in Sources */,
 				667748FF24221E670019CB9E /* SU_ForegroundColor.swift in Sources */,
+				66F3B86324A1F183005B6FC6 /* SU_SignInWithAppleButton.swift in Sources */,
 				667748D0241B88F10019CB9E /* SU_TransformedShape.swift in Sources */,
+				66B4C69524A20B41000057A2 /* SU_LazyVStack.swift in Sources */,
 				667748802418B8C90019CB9E /* SU_Toggle.swift in Sources */,
 				667748DD241F14820019CB9E /* SU_Path.swift in Sources */,
 				66A0EA52242C53D7007C6B63 /* SU_Animation_02.swift in Sources */,
@@ -1065,7 +1187,9 @@
 				667749A32428B81B0019CB9E /* SU_StatusBar.swift in Sources */,
 				6677493724236B6D0019CB9E /* SU_AllowsTightening.swift in Sources */,
 				6677491724233EC50019CB9E /* SU_ScaledToFit.swift in Sources */,
+				66B4C69124A20916000057A2 /* SU_Link.swift in Sources */,
 				66774903242227200019CB9E /* SU_ZIndex.swift in Sources */,
+				66B4C69F24A2F445000057A2 /* SU_TabStyle.swift in Sources */,
 				6677491224231F870019CB9E /* SU_Mask.swift in Sources */,
 				667749692424C1700019CB9E /* SU_Shadow.swift in Sources */,
 				66A0EA3A242B0B1C007C6B63 /* SU_EquatableView.swift in Sources */,
@@ -1073,7 +1197,9 @@
 				66A0EA43242B37D6007C6B63 /* SU_RenderingMode.swift in Sources */,
 				66774945242450410019CB9E /* SU_OnTapGesture.swift in Sources */,
 				66774947242452E00019CB9E /* SU_OnLongPressGesture.swift in Sources */,
+				66B4C68D24A200B1000057A2 /* SU_ProgressView.swift in Sources */,
 				6632ABE524179137003AC252 /* SU_TextField.swift in Sources */,
+				66A4432224A1D40C008CEA36 /* SU_App.swift in Sources */,
 				667749AD2428BD4F0019CB9E /* SU_DeleteDisabled.swift in Sources */,
 				6677492D242360EC0019CB9E /* SU_LineLimit.swift in Sources */,
 				667749AB2428BB380019CB9E /* SU_Disabled.swift in Sources */,
@@ -1087,6 +1213,7 @@
 				667749782424C9050019CB9E /* SU_CompositingGroup.swift in Sources */,
 				66A0EA47242B3A69007C6B63 /* SU_Interpolation.swift in Sources */,
 				667748EA2420AADC0019CB9E /* SU_LayoutPriority.swift in Sources */,
+				66B4C68F24A206A5000057A2 /* SU_Label.swift in Sources */,
 				6677492B24235F6E0019CB9E /* SU_Font.swift in Sources */,
 				66774898241A06800019CB9E /* SU_ForEach_Perform_Action.swift in Sources */,
 				667749A12428B7BC0019CB9E /* SU_NavigationBarHidden.swift in Sources */,
@@ -1104,8 +1231,11 @@
 				66774985242892C30019CB9E /* SU_ButtonStyle.swift in Sources */,
 				66A0EA36242B05CB007C6B63 /* SU_Equatable_Normal.swift in Sources */,
 				667749A92428BB1E0019CB9E /* SU_Hidden.swift in Sources */,
+				660C2C64243C852D003305F1 /* Buttons.swift in Sources */,
+				66B4C69724A20BC4000057A2 /* SU_LazyHGrid.swift in Sources */,
 				6677490C242318C00019CB9E /* SU_Clipped.swift in Sources */,
 				6677489A241A0B840019CB9E /* SU_ScrollView.swift in Sources */,
+				66F3B86524A1F378005B6FC6 /* SU_ColorPicker.swift in Sources */,
 				66A0EA45242B3A5A007C6B63 /* SU_Antialiased.swift in Sources */,
 				667749B52429EF650019CB9E /* SU_AnchorPreference.swift in Sources */,
 				6677491024231DDA0019CB9E /* SU_CornerRadius.swift in Sources */,
@@ -1121,6 +1251,7 @@
 				667748FC24221B880019CB9E /* SU_Padding.swift in Sources */,
 				667748B3241A3CD40019CB9E /* SU_popover.swift in Sources */,
 				667748CE241B871E0019CB9E /* SU_OffsetShape.swift in Sources */,
+				66A4432724A1DA53008CEA36 /* SU_TextEditor.swift in Sources */,
 				667748B9241A45DA0019CB9E /* SU_TupleView.swift in Sources */,
 				667749152423232F0019CB9E /* SU_ScaledToFill.swift in Sources */,
 				66A0EA2E242AECA9007C6B63 /* UIVIewPreview.swift in Sources */,
@@ -1140,8 +1271,11 @@
 				667749B92429FDBA0019CB9E /* SU_TransformPreference.swift in Sources */,
 				66A0EA54242C784A007C6B63 /* SU_Animation_03.swift in Sources */,
 				6677490824222C1B0019CB9E /* SU_Border.swift in Sources */,
+				66B4C6A324A2FB31000057A2 /* SU_OutlineGroup.swift in Sources */,
+				66B4C6A124A2F868000057A2 /* SU_GroupBox.swift in Sources */,
 				667748AA241A292A0019CB9E /* SU_NavigationView.swift in Sources */,
 				667748942418E8B40019CB9E /* SU_List.swift in Sources */,
+				66B4C69D24A2E957000057A2 /* SU_ScrollViewReader.swift in Sources */,
 				66A0EA31242AF499007C6B63 /* SU_ID.swift in Sources */,
 				667748BE241B5DF50019CB9E /* SU_Rectangle.swift in Sources */,
 				66A0EA4D242B52FB007C6B63 /* SU_ViewModifier.swift in Sources */,
@@ -1297,7 +1431,7 @@
 				DEVELOPMENT_TEAM = DTH85SS4GJ;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = SwiftUIExample/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1318,7 +1452,7 @@
 				DEVELOPMENT_TEAM = DTH85SS4GJ;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = SwiftUIExample/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

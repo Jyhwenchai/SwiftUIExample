@@ -43,6 +43,8 @@ struct SU_Shape: View {
 
 struct SU_Shape_Previews: PreviewProvider {
     static var previews: some View {
-        SU_Shape()
+        Group {
+            SU_Shape()
+        }
     }
 }

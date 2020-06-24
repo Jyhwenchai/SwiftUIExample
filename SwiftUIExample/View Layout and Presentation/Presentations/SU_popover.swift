@@ -16,7 +16,7 @@ struct SU_popover: View {
     @State var showActionSheet = false
     var body: some View {
         Button(action: {
-                   self.showActionSheet = true
+            self.showActionSheet = true
         }) {
             Text("show alert")
         }
