@@ -15,6 +15,8 @@
 		6632ABD924178BD0003AC252 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6632ABD824178BD0003AC252 /* Preview Assets.xcassets */; };
 		6632ABDC24178BD0003AC252 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6632ABDA24178BD0003AC252 /* LaunchScreen.storyboard */; };
 		6632ABE524179137003AC252 /* SU_TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6632ABE424179137003AC252 /* SU_TextField.swift */; };
+		6642302C24AF183100BD0783 /* SU_ExclusiveGesture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6642302B24AF183100BD0783 /* SU_ExclusiveGesture.swift */; };
+		6642302E24AF1AC500BD0783 /* SU_GestureState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6642302D24AF1AC500BD0783 /* SU_GestureState.swift */; };
 		667361B42417A131006D5B11 /* SU_SecureField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 667361B32417A131006D5B11 /* SU_SecureField.swift */; };
 		6677487B2418869F0019CB9E /* SU_Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6677487A2418869E0019CB9E /* SU_Image.swift */; };
 		6677487E2418B7950019CB9E /* SU_Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6677487D2418B7950019CB9E /* SU_Button.swift */; };
@@ -153,6 +155,21 @@
 		667749C1242A09FC0019CB9E /* SU_OverlayPreferenceValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 667749C0242A09FC0019CB9E /* SU_OverlayPreferenceValue.swift */; };
 		667749C4242A0C660019CB9E /* SU_AllowsHitTesting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 667749C3242A0C660019CB9E /* SU_AllowsHitTesting.swift */; };
 		667749C6242A0FC10019CB9E /* SU_ContentShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 667749C5242A0FC10019CB9E /* SU_ContentShape.swift */; };
+		6680C75224ADCA5A0068FE53 /* SU_UIViewRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6680C75124ADCA5A0068FE53 /* SU_UIViewRepresentable.swift */; };
+		6680C75424ADD6FD0068FE53 /* SU_UIViewControllerRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6680C75324ADD6FD0068FE53 /* SU_UIViewControllerRepresentable.swift */; };
+		6680C75724ADE5140068FE53 /* SU_State.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6680C75624ADE5140068FE53 /* SU_State.swift */; };
+		6680C75924ADE7CC0068FE53 /* SU_Binding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6680C75824ADE7CC0068FE53 /* SU_Binding.swift */; };
+		6680C75B24AEC77D0068FE53 /* SU_ObservedObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6680C75A24AEC77D0068FE53 /* SU_ObservedObject.swift */; };
+		6680C75F24AED1860068FE53 /* SU_EnvironmentObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6680C75E24AED1860068FE53 /* SU_EnvironmentObject.swift */; };
+		6680C76224AED1CF0068FE53 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6680C76124AED1CF0068FE53 /* Model.swift */; };
+		6680C76424AED50A0068FE53 /* SU_StateObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6680C76324AED50A0068FE53 /* SU_StateObject.swift */; };
+		6680C79024AEE0A60068FE53 /* SU_Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6680C78F24AEE0A60068FE53 /* SU_Environment.swift */; };
+		6680C79324AEFD9E0068FE53 /* SU_TapGesture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6680C79224AEFD9E0068FE53 /* SU_TapGesture.swift */; };
+		6680C79524AF007A0068FE53 /* SU_LongPressGesture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6680C79424AF007A0068FE53 /* SU_LongPressGesture.swift */; };
+		6680C79724AF03180068FE53 /* SU_DragGesture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6680C79624AF03180068FE53 /* SU_DragGesture.swift */; };
+		6680C79924AF0A7E0068FE53 /* SU_MagnificationGesture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6680C79824AF0A7E0068FE53 /* SU_MagnificationGesture.swift */; };
+		6680C79B24AF0B350068FE53 /* SU_RotationGesture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6680C79A24AF0B350068FE53 /* SU_RotationGesture.swift */; };
+		6680C79D24AF0C5D0068FE53 /* SU_SequenceGesture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6680C79C24AF0C5D0068FE53 /* SU_SequenceGesture.swift */; };
 		66A0EA23242A1385007C6B63 /* SU_PreviewDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A0EA22242A1385007C6B63 /* SU_PreviewDevice.swift */; };
 		66A0EA25242A15AE007C6B63 /* SU_PreviewDisplayName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A0EA24242A15AE007C6B63 /* SU_PreviewDisplayName.swift */; };
 		66A0EA27242A1607007C6B63 /* SU_PreviewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A0EA26242A1607007C6B63 /* SU_PreviewLayout.swift */; };
@@ -204,6 +221,8 @@
 		6632ABDB24178BD0003AC252 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6632ABDD24178BD0003AC252 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6632ABE424179137003AC252 /* SU_TextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SU_TextField.swift; sourceTree = "<group>"; };
+		6642302B24AF183100BD0783 /* SU_ExclusiveGesture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SU_ExclusiveGesture.swift; sourceTree = "<group>"; };
+		6642302D24AF1AC500BD0783 /* SU_GestureState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SU_GestureState.swift; sourceTree = "<group>"; };
 		667361B32417A131006D5B11 /* SU_SecureField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SU_SecureField.swift; sourceTree = "<group>"; };
 		6677487A2418869E0019CB9E /* SU_Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SU_Image.swift; sourceTree = "<group>"; };
 		6677487C24188C590019CB9E /* View and Controls.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "View and Controls.md"; sourceTree = "<group>"; };
@@ -296,7 +315,7 @@
 		66774946242452E00019CB9E /* SU_OnLongPressGesture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SU_OnLongPressGesture.swift; sourceTree = "<group>"; };
 		66774948242459010019CB9E /* SU_Gesture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SU_Gesture.swift; sourceTree = "<group>"; };
 		6677494A242463170019CB9E /* SU_HightPriorityGesture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SU_HightPriorityGesture.swift; sourceTree = "<group>"; };
-		6677494C24246BA30019CB9E /* SU_SimultaneousGesture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SU_SimultaneousGesture.swift; sourceTree = "<group>"; };
+		6677494C24246BA30019CB9E /* SU_SimultaneousGesture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SU_SimultaneousGesture.swift; path = "../View Modifiers/Handling View Taps and Gestures/SU_SimultaneousGesture.swift"; sourceTree = "<group>"; };
 		6677494E24246F300019CB9E /* SU_GestureMask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SU_GestureMask.swift; sourceTree = "<group>"; };
 		66774950242494B90019CB9E /* SU_ItemProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SU_ItemProvider.swift; sourceTree = "<group>"; };
 		66774952242497B60019CB9E /* SU_Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SU_Transaction.swift; sourceTree = "<group>"; };
@@ -346,6 +365,21 @@
 		667749C0242A09FC0019CB9E /* SU_OverlayPreferenceValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SU_OverlayPreferenceValue.swift; sourceTree = "<group>"; };
 		667749C3242A0C660019CB9E /* SU_AllowsHitTesting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SU_AllowsHitTesting.swift; sourceTree = "<group>"; };
 		667749C5242A0FC10019CB9E /* SU_ContentShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SU_ContentShape.swift; sourceTree = "<group>"; };
+		6680C75124ADCA5A0068FE53 /* SU_UIViewRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SU_UIViewRepresentable.swift; sourceTree = "<group>"; };
+		6680C75324ADD6FD0068FE53 /* SU_UIViewControllerRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SU_UIViewControllerRepresentable.swift; sourceTree = "<group>"; };
+		6680C75624ADE5140068FE53 /* SU_State.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SU_State.swift; sourceTree = "<group>"; };
+		6680C75824ADE7CC0068FE53 /* SU_Binding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SU_Binding.swift; sourceTree = "<group>"; };
+		6680C75A24AEC77D0068FE53 /* SU_ObservedObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SU_ObservedObject.swift; sourceTree = "<group>"; };
+		6680C75E24AED1860068FE53 /* SU_EnvironmentObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SU_EnvironmentObject.swift; sourceTree = "<group>"; };
+		6680C76124AED1CF0068FE53 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		6680C76324AED50A0068FE53 /* SU_StateObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SU_StateObject.swift; sourceTree = "<group>"; };
+		6680C78F24AEE0A60068FE53 /* SU_Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SU_Environment.swift; sourceTree = "<group>"; };
+		6680C79224AEFD9E0068FE53 /* SU_TapGesture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SU_TapGesture.swift; sourceTree = "<group>"; };
+		6680C79424AF007A0068FE53 /* SU_LongPressGesture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SU_LongPressGesture.swift; sourceTree = "<group>"; };
+		6680C79624AF03180068FE53 /* SU_DragGesture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SU_DragGesture.swift; sourceTree = "<group>"; };
+		6680C79824AF0A7E0068FE53 /* SU_MagnificationGesture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SU_MagnificationGesture.swift; sourceTree = "<group>"; };
+		6680C79A24AF0B350068FE53 /* SU_RotationGesture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SU_RotationGesture.swift; sourceTree = "<group>"; };
+		6680C79C24AF0C5D0068FE53 /* SU_SequenceGesture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SU_SequenceGesture.swift; sourceTree = "<group>"; };
 		66A0EA22242A1385007C6B63 /* SU_PreviewDevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SU_PreviewDevice.swift; sourceTree = "<group>"; };
 		66A0EA24242A15AE007C6B63 /* SU_PreviewDisplayName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SU_PreviewDisplayName.swift; sourceTree = "<group>"; };
 		66A0EA26242A1607007C6B63 /* SU_PreviewLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SU_PreviewLayout.swift; sourceTree = "<group>"; };
@@ -442,8 +476,12 @@
 				6632ABE324178F4A003AC252 /* View and Controls */,
 				667748922418E3C10019CB9E /* View Layout and Presentation */,
 				667748BB241B5AA40019CB9E /* Drawing and Animation */,
+				6680C75024ADC6A80068FE53 /* Framework Integration */,
 				667748E124206C590019CB9E /* View Modifiers */,
+				6680C75524ADE2CC0068FE53 /* State and Data Flow */,
+				6680C79124AEFC7D0068FE53 /* Gestures */,
 				667748E52420A86D0019CB9E /* resources */,
+				6680C76024AED1A20068FE53 /* Model */,
 				6632ABCF24178BCD003AC252 /* AppDelegate.swift */,
 				6632ABD124178BCD003AC252 /* SceneDelegate.swift */,
 				6632ABD524178BD0003AC252 /* Assets.xcassets */,
@@ -758,7 +796,6 @@
 				66774946242452E00019CB9E /* SU_OnLongPressGesture.swift */,
 				66774948242459010019CB9E /* SU_Gesture.swift */,
 				6677494A242463170019CB9E /* SU_HightPriorityGesture.swift */,
-				6677494C24246BA30019CB9E /* SU_SimultaneousGesture.swift */,
 				66774950242494B90019CB9E /* SU_ItemProvider.swift */,
 				66774952242497B60019CB9E /* SU_Transaction.swift */,
 			);
@@ -902,6 +939,59 @@
 			path = "Configuring a View for Hit Testing";
 			sourceTree = "<group>";
 		};
+		6680C75024ADC6A80068FE53 /* Framework Integration */ = {
+			isa = PBXGroup;
+			children = (
+				6680C75124ADCA5A0068FE53 /* SU_UIViewRepresentable.swift */,
+				6680C75324ADD6FD0068FE53 /* SU_UIViewControllerRepresentable.swift */,
+			);
+			path = "Framework Integration";
+			sourceTree = "<group>";
+		};
+		6680C75524ADE2CC0068FE53 /* State and Data Flow */ = {
+			isa = PBXGroup;
+			children = (
+				6680C75624ADE5140068FE53 /* SU_State.swift */,
+				6680C75824ADE7CC0068FE53 /* SU_Binding.swift */,
+				6680C75A24AEC77D0068FE53 /* SU_ObservedObject.swift */,
+				6680C75E24AED1860068FE53 /* SU_EnvironmentObject.swift */,
+				6680C78F24AEE0A60068FE53 /* SU_Environment.swift */,
+			);
+			path = "State and Data Flow";
+			sourceTree = "<group>";
+		};
+		6680C76024AED1A20068FE53 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6680C76124AED1CF0068FE53 /* Model.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6680C76524AED5140068FE53 /* State and Data Flow */ = {
+			isa = PBXGroup;
+			children = (
+				6680C76324AED50A0068FE53 /* SU_StateObject.swift */,
+			);
+			path = "State and Data Flow";
+			sourceTree = "<group>";
+		};
+		6680C79124AEFC7D0068FE53 /* Gestures */ = {
+			isa = PBXGroup;
+			children = (
+				6680C79224AEFD9E0068FE53 /* SU_TapGesture.swift */,
+				6680C79424AF007A0068FE53 /* SU_LongPressGesture.swift */,
+				6680C79624AF03180068FE53 /* SU_DragGesture.swift */,
+				6680C79824AF0A7E0068FE53 /* SU_MagnificationGesture.swift */,
+				6680C79A24AF0B350068FE53 /* SU_RotationGesture.swift */,
+				6680C79C24AF0C5D0068FE53 /* SU_SequenceGesture.swift */,
+				6677494C24246BA30019CB9E /* SU_SimultaneousGesture.swift */,
+				6642302B24AF183100BD0783 /* SU_ExclusiveGesture.swift */,
+				6642302D24AF1AC500BD0783 /* SU_GestureState.swift */,
+			);
+			path = Gestures;
+			sourceTree = "<group>";
+		};
 		66A0EA21242A12B6007C6B63 /* Configuring View Previews */ = {
 			isa = PBXGroup;
 			children = (
@@ -982,6 +1072,7 @@
 			children = (
 				66A4432024A1D3FA008CEA36 /* App Structure and Behavior */,
 				66A4432524A1DA3A008CEA36 /* View and Controls */,
+				6680C76524AED5140068FE53 /* State and Data Flow */,
 			);
 			path = "New in iOS 14";
 			sourceTree = "<group>";
@@ -1130,6 +1221,7 @@
 				66B4C6A524A2FD5C000057A2 /* SU_DisclosureGroup.swift in Sources */,
 				6677493D242376810019CB9E /* SU_DisableAutocorrection.swift in Sources */,
 				6677494224237E080019CB9E /* SU_Transition.swift in Sources */,
+				6680C79724AF03180068FE53 /* SU_DragGesture.swift in Sources */,
 				667748C4241B6CD50019CB9E /* SU_Ellipse.swift in Sources */,
 				6677496E2424C5990019CB9E /* SU_Brighttness.swift in Sources */,
 				66774924242351230019CB9E /* SU_ ProjectionEffect.swift in Sources */,
@@ -1168,15 +1260,20 @@
 				667361B42417A131006D5B11 /* SU_SecureField.swift in Sources */,
 				66774987242899FA0019CB9E /* SU_DatePickerStyle.swift in Sources */,
 				667748FF24221E670019CB9E /* SU_ForegroundColor.swift in Sources */,
+				6680C79024AEE0A60068FE53 /* SU_Environment.swift in Sources */,
 				66F3B86324A1F183005B6FC6 /* SU_SignInWithAppleButton.swift in Sources */,
 				667748D0241B88F10019CB9E /* SU_TransformedShape.swift in Sources */,
 				66B4C69524A20B41000057A2 /* SU_LazyVStack.swift in Sources */,
 				667748802418B8C90019CB9E /* SU_Toggle.swift in Sources */,
+				6680C75924ADE7CC0068FE53 /* SU_Binding.swift in Sources */,
 				667748DD241F14820019CB9E /* SU_Path.swift in Sources */,
 				66A0EA52242C53D7007C6B63 /* SU_Animation_02.swift in Sources */,
+				6680C75B24AEC77D0068FE53 /* SU_ObservedObject.swift in Sources */,
 				667748B5241A3D4B0019CB9E /* SU_sheet.swift in Sources */,
 				667748D5241B8C520019CB9E /* SU_ImagePaint.swift in Sources */,
 				6677498D2428A2F60019CB9E /* SU_TextFieldStyle.swift in Sources */,
+				6680C79524AF007A0068FE53 /* SU_LongPressGesture.swift in Sources */,
+				6680C75724ADE5140068FE53 /* SU_State.swift in Sources */,
 				667748AE241A35530019CB9E /* SU_Alert.swift in Sources */,
 				66A0EA33242B00FE007C6B63 /* SU_Equatable.swift in Sources */,
 				667749C1242A09FC0019CB9E /* SU_OverlayPreferenceValue.swift in Sources */,
@@ -1188,10 +1285,14 @@
 				6677493724236B6D0019CB9E /* SU_AllowsTightening.swift in Sources */,
 				6677491724233EC50019CB9E /* SU_ScaledToFit.swift in Sources */,
 				66B4C69124A20916000057A2 /* SU_Link.swift in Sources */,
+				6680C75F24AED1860068FE53 /* SU_EnvironmentObject.swift in Sources */,
 				66774903242227200019CB9E /* SU_ZIndex.swift in Sources */,
 				66B4C69F24A2F445000057A2 /* SU_TabStyle.swift in Sources */,
 				6677491224231F870019CB9E /* SU_Mask.swift in Sources */,
 				667749692424C1700019CB9E /* SU_Shadow.swift in Sources */,
+				6642302E24AF1AC500BD0783 /* SU_GestureState.swift in Sources */,
+				6680C75224ADCA5A0068FE53 /* SU_UIViewRepresentable.swift in Sources */,
+				6680C79B24AF0B350068FE53 /* SU_RotationGesture.swift in Sources */,
 				66A0EA3A242B0B1C007C6B63 /* SU_EquatableView.swift in Sources */,
 				6677491D242346FF0019CB9E /* SU_ImageScale.swift in Sources */,
 				66A0EA43242B37D6007C6B63 /* SU_RenderingMode.swift in Sources */,
@@ -1204,12 +1305,14 @@
 				6677492D242360EC0019CB9E /* SU_LineLimit.swift in Sources */,
 				667749AB2428BB380019CB9E /* SU_Disabled.swift in Sources */,
 				667748A2241A17990019CB9E /* SU_Form_Group_Section.swift in Sources */,
+				6680C79D24AF0C5D0068FE53 /* SU_SequenceGesture.swift in Sources */,
 				667749012422213E0019CB9E /* SU_Background.swift in Sources */,
 				667749642424B7F70019CB9E /* SU_AccentColor.swift in Sources */,
 				66774926242359330019CB9E /* SU_transformEffect.swift in Sources */,
 				667748A6241A20A50019CB9E /* SU_Spacer.swift in Sources */,
 				6677488A2418D3FE0019CB9E /* SU_NavigationLink.swift in Sources */,
 				667748B0241A36DD0019CB9E /* SU_ActionSheet.swift in Sources */,
+				6680C79324AEFD9E0068FE53 /* SU_TapGesture.swift in Sources */,
 				667749782424C9050019CB9E /* SU_CompositingGroup.swift in Sources */,
 				66A0EA47242B3A69007C6B63 /* SU_Interpolation.swift in Sources */,
 				667748EA2420AADC0019CB9E /* SU_LayoutPriority.swift in Sources */,
@@ -1221,6 +1324,7 @@
 				667749B72429F9F30019CB9E /* SU_TransformAnchorPreference.swift in Sources */,
 				66774953242497B60019CB9E /* SU_Transaction.swift in Sources */,
 				667749312423660C0019CB9E /* SU_MinimumScaleFactor.swift in Sources */,
+				6680C75424ADD6FD0068FE53 /* SU_UIViewControllerRepresentable.swift in Sources */,
 				667749702424C6020019CB9E /* SU_Contrast.swift in Sources */,
 				667748EF2420BA9E0019CB9E /* SU_Offset.swift in Sources */,
 				667748962419E10E0019CB9E /* SU_ForEach.swift in Sources */,
@@ -1234,6 +1338,7 @@
 				660C2C64243C852D003305F1 /* Buttons.swift in Sources */,
 				66B4C69724A20BC4000057A2 /* SU_LazyHGrid.swift in Sources */,
 				6677490C242318C00019CB9E /* SU_Clipped.swift in Sources */,
+				6680C76224AED1CF0068FE53 /* Model.swift in Sources */,
 				6677489A241A0B840019CB9E /* SU_ScrollView.swift in Sources */,
 				66F3B86524A1F378005B6FC6 /* SU_ColorPicker.swift in Sources */,
 				66A0EA45242B3A5A007C6B63 /* SU_Antialiased.swift in Sources */,
@@ -1246,15 +1351,18 @@
 				667749AF2428BE2C0019CB9E /* SU_MoveDisabled.swift in Sources */,
 				6677491924233F4E0019CB9E /* SU_ScaleEffect.swift in Sources */,
 				6677499D2428B1C20019CB9E /* SU_NavigationViewStyle.swift in Sources */,
+				6680C76424AED50A0068FE53 /* SU_StateObject.swift in Sources */,
 				667749BF242A099F0019CB9E /* SU_BackgroundPreferenceValue.swift in Sources */,
 				667749962428AD5B0019CB9E /* SU_ListStyle.swift in Sources */,
 				667748FC24221B880019CB9E /* SU_Padding.swift in Sources */,
 				667748B3241A3CD40019CB9E /* SU_popover.swift in Sources */,
 				667748CE241B871E0019CB9E /* SU_OffsetShape.swift in Sources */,
 				66A4432724A1DA53008CEA36 /* SU_TextEditor.swift in Sources */,
+				6642302C24AF183100BD0783 /* SU_ExclusiveGesture.swift in Sources */,
 				667748B9241A45DA0019CB9E /* SU_TupleView.swift in Sources */,
 				667749152423232F0019CB9E /* SU_ScaledToFill.swift in Sources */,
 				66A0EA2E242AECA9007C6B63 /* UIVIewPreview.swift in Sources */,
+				6680C79924AF0A7E0068FE53 /* SU_MagnificationGesture.swift in Sources */,
 				6677495624249B4C0019CB9E /* SU_OnAppear.swift in Sources */,
 				667748A0241A15580019CB9E /* SU_Section.swift in Sources */,
 				667748F42420CFC80019CB9E /* SU_GeometryReader.swift in Sources */,

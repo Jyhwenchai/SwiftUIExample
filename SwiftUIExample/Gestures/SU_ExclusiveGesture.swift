@@ -1,20 +1,17 @@
 //
-//  SU_SimultaneousGesture.swift
+//  SU_ ExclusiveGesture.swift
 //  SwiftUIExample
 //
-//  Created by 蔡志文 on 2020/3/20.
+//  Created by 蔡志文 on 2020/7/3.
 //  Copyright © 2020 蔡志文. All rights reserved.
 //
 
 import SwiftUI
 
-/**
- `func simultaneousGesture<T>(_ gesture: T, including mask: GestureMask = .all) -> some View where T : Gesture`
- 
- 将手势附加到视图以与视图已存在的手势同时处理
- */
-struct SU_SimultaneousGesture: View {
-    
+/// `ExclusiveGesture`
+///
+/// 由两个手势组成的手势，使其中只有一个可以成功。
+struct SU_ExclusiveGesture: View {
     @State var degrees = 0.0
     @State var scale: CGFloat = 1.0
     
@@ -35,19 +32,20 @@ struct SU_SimultaneousGesture: View {
                 degrees = 0
             }
         
-        let scaleAndRotateGesture = scaleGesture.simultaneously(with: rotationGesture)
+//        let enableGesture = scaleGesture.exclusively(before: rotationGesture)
+        let enableGesture = rotationGesture.exclusively(before: scaleGesture)
         
         return Rectangle()
             .fill(Color.blue)
             .frame(width: 200, height: 150)
-            .gesture(scaleAndRotateGesture)
+            .gesture(enableGesture)
             .rotationEffect(Angle(degrees: degrees)).scaleEffect(scale, anchor: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/).animation(.easeIn)
         
     }
 }
 
-struct SU_SimultaneousGesture_Previews: PreviewProvider {
+struct SU_ExclusiveGesture_Previews: PreviewProvider {
     static var previews: some View {
-        SU_SimultaneousGesture()
+        SU_ExclusiveGesture()
     }
 }

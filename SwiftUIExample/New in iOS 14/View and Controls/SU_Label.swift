@@ -48,6 +48,7 @@ struct SU_Label: View {
                     .frame(width: 44, height: 44, alignment: .center)
                     .overlay(Text("ilosic").font(.body).foregroundColor(.white))
             }
+            .labelStyle(RedBorderedLabelStyle())
         }.font(.title)
     }
 }
