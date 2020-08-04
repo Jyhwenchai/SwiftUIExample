@@ -17,7 +17,9 @@ struct SU_SecureField: View {
             .multilineTextAlignment(.center)
             .font(.system(size: 25))
             .foregroundColor(.red)
-            .padding()
+            .padding(.vertical)
+            .border(Color.red, width: 2)
+            .padding(.horizontal)
     }
 }
 

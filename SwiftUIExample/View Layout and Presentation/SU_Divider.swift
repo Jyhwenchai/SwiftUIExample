@@ -15,20 +15,36 @@ import SwiftUI
  */
 struct SU_Divider: View {
     var body: some View {
-        VStack {
-            Text("Hello, World!")
-            Text("Hello, World!")
-            Text("Hello, World!")
-            Divider()
-            Text("Hello, World!")
-            Text("Hello, World!")
-            Text("Hello, World!")
+        HStack(spacing: 20) {
+            VStack {
+                Text("Hello, World!")
+                Text("Hello, World!")
+                Text("Hello, World!")
+                Divider()
+                Text("Hello, World!")
+                Text("Hello, World!")
+                Text("Hello, World!")
+            }
+            // 我们使用 Divider 控制间距
+            VStack {
+                Text("Hello, World!")
+                Text("Hello, World!")
+                Text("Hello, World!")
+                Divider().frame(width: 0, height: 10)
+                Text("Hello, World!")
+                Text("Hello, World!")
+                Text("Hello, World!")
+            }
         }
+        .padding(.horizontal, 20)
     }
 }
 
 struct SU_Divider_Previews: PreviewProvider {
     static var previews: some View {
-        SU_Divider()
+        Group {
+            SU_Divider()
+                
+        }
     }
 }
