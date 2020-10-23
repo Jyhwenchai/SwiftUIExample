@@ -7,7 +7,7 @@
 //
 
 import SwiftUI
-
+import AuthenticationServices
 /// # SignInWithAppleButton
 /// 专门用于做苹果登录的按钮
 struct SU_SignInWithAppleButton: View {
