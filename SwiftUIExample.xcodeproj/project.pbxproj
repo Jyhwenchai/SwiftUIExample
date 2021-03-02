@@ -17,6 +17,16 @@
 		6632ABE524179137003AC252 /* SU_TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6632ABE424179137003AC252 /* SU_TextField.swift */; };
 		6642302C24AF183100BD0783 /* SU_ExclusiveGesture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6642302B24AF183100BD0783 /* SU_ExclusiveGesture.swift */; };
 		6642302E24AF1AC500BD0783 /* SU_GestureState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6642302D24AF1AC500BD0783 /* SU_GestureState.swift */; };
+		6664917A25EDDD5E007CF182 /* CSTabBarMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6664917925EDDD5E007CF182 /* CSTabBarMainView.swift */; };
+		6664917E25EDDDB3007CF182 /* TabTag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6664917D25EDDDB3007CF182 /* TabTag.swift */; };
+		6664918225EDDDFA007CF182 /* CSTabBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6664918125EDDDFA007CF182 /* CSTabBarItem.swift */; };
+		6664918525EDE034007CF182 /* CSTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6664918425EDE034007CF182 /* CSTabBar.swift */; };
+		6664918B25EDE072007CF182 /* CSAddTabBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6664918A25EDE072007CF182 /* CSAddTabBarItem.swift */; };
+		6664918F25EDE2A3007CF182 /* CSHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6664918E25EDE2A3007CF182 /* CSHomeView.swift */; };
+		6664919225EDE2AB007CF182 /* CSMineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6664919125EDE2AB007CF182 /* CSMineView.swift */; };
+		6664919525EDE2B4007CF182 /* CSModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6664919425EDE2B4007CF182 /* CSModalView.swift */; };
+		6664919A25EDE2C8007CF182 /* CSDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6664919925EDE2C8007CF182 /* CSDetailView.swift */; };
+		6664919D25EDE460007CF182 /* CSTabSegmentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6664919C25EDE460007CF182 /* CSTabSegmentView.swift */; };
 		667361B42417A131006D5B11 /* SU_SecureField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 667361B32417A131006D5B11 /* SU_SecureField.swift */; };
 		6677487B2418869F0019CB9E /* SU_Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6677487A2418869E0019CB9E /* SU_Image.swift */; };
 		6677487E2418B7950019CB9E /* SU_Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6677487D2418B7950019CB9E /* SU_Button.swift */; };
@@ -223,6 +233,16 @@
 		6632ABE424179137003AC252 /* SU_TextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SU_TextField.swift; sourceTree = "<group>"; };
 		6642302B24AF183100BD0783 /* SU_ExclusiveGesture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SU_ExclusiveGesture.swift; sourceTree = "<group>"; };
 		6642302D24AF1AC500BD0783 /* SU_GestureState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SU_GestureState.swift; sourceTree = "<group>"; };
+		6664917925EDDD5E007CF182 /* CSTabBarMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSTabBarMainView.swift; sourceTree = "<group>"; };
+		6664917D25EDDDB3007CF182 /* TabTag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabTag.swift; sourceTree = "<group>"; };
+		6664918125EDDDFA007CF182 /* CSTabBarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSTabBarItem.swift; sourceTree = "<group>"; };
+		6664918425EDE034007CF182 /* CSTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSTabBar.swift; sourceTree = "<group>"; };
+		6664918A25EDE072007CF182 /* CSAddTabBarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSAddTabBarItem.swift; sourceTree = "<group>"; };
+		6664918E25EDE2A3007CF182 /* CSHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSHomeView.swift; sourceTree = "<group>"; };
+		6664919125EDE2AB007CF182 /* CSMineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSMineView.swift; sourceTree = "<group>"; };
+		6664919425EDE2B4007CF182 /* CSModalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSModalView.swift; sourceTree = "<group>"; };
+		6664919925EDE2C8007CF182 /* CSDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSDetailView.swift; sourceTree = "<group>"; };
+		6664919C25EDE460007CF182 /* CSTabSegmentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSTabSegmentView.swift; sourceTree = "<group>"; };
 		667361B32417A131006D5B11 /* SU_SecureField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SU_SecureField.swift; sourceTree = "<group>"; };
 		6677487A2418869E0019CB9E /* SU_Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SU_Image.swift; sourceTree = "<group>"; };
 		6677487C24188C590019CB9E /* View and Controls.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "View and Controls.md"; sourceTree = "<group>"; };
@@ -519,6 +539,23 @@
 				66A0EA4C242B52FB007C6B63 /* SU_ViewModifier.swift */,
 			);
 			path = "View and Controls";
+			sourceTree = "<group>";
+		};
+		6664917825EDDCD9007CF182 /* CustomTabBar */ = {
+			isa = PBXGroup;
+			children = (
+				6664917925EDDD5E007CF182 /* CSTabBarMainView.swift */,
+				6664917D25EDDDB3007CF182 /* TabTag.swift */,
+				6664918125EDDDFA007CF182 /* CSTabBarItem.swift */,
+				6664918A25EDE072007CF182 /* CSAddTabBarItem.swift */,
+				6664918425EDE034007CF182 /* CSTabBar.swift */,
+				6664918E25EDE2A3007CF182 /* CSHomeView.swift */,
+				6664919125EDE2AB007CF182 /* CSMineView.swift */,
+				6664919425EDE2B4007CF182 /* CSModalView.swift */,
+				6664919925EDE2C8007CF182 /* CSDetailView.swift */,
+				6664919C25EDE460007CF182 /* CSTabSegmentView.swift */,
+			);
+			path = CustomTabBar;
 			sourceTree = "<group>";
 		};
 		667748922418E3C10019CB9E /* View Layout and Presentation */ = {
@@ -1006,6 +1043,7 @@
 		66A0EA2A242AEC7A007C6B63 /* Others */ = {
 			isa = PBXGroup;
 			children = (
+				6664917825EDDCD9007CF182 /* CustomTabBar */,
 				660C2C62243C8513003305F1 /* CustomView */,
 				660C2C61243C84DF003305F1 /* UIKitPreview */,
 			);
@@ -1202,6 +1240,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6664917E25EDDDB3007CF182 /* TabTag.swift in Sources */,
 				66A0EA29242A16FF007C6B63 /* SU_MorePreviewLayout.swift in Sources */,
 				667749C6242A0FC10019CB9E /* SU_ContentShape.swift in Sources */,
 				66774905242228620019CB9E /* SU_Overlay.swift in Sources */,
@@ -1252,6 +1291,7 @@
 				6632ABD024178BCD003AC252 /* AppDelegate.swift in Sources */,
 				667749762424C8120019CB9E /* SU_BlendMode.swift in Sources */,
 				66A0EA27242A1607007C6B63 /* SU_PreviewLayout.swift in Sources */,
+				6664919A25EDE2C8007CF182 /* CSDetailView.swift in Sources */,
 				667749BD242A08E00019CB9E /* SU_OnPreferenceChange.swift in Sources */,
 				6677487B2418869F0019CB9E /* SU_Image.swift in Sources */,
 				667748F12420BBBC0019CB9E /* SU_EdgesIgnoringSafeArea.swift in Sources */,
@@ -1263,6 +1303,7 @@
 				6680C79024AEE0A60068FE53 /* SU_Environment.swift in Sources */,
 				66F3B86324A1F183005B6FC6 /* SU_SignInWithAppleButton.swift in Sources */,
 				667748D0241B88F10019CB9E /* SU_TransformedShape.swift in Sources */,
+				6664918225EDDDFA007CF182 /* CSTabBarItem.swift in Sources */,
 				66B4C69524A20B41000057A2 /* SU_LazyVStack.swift in Sources */,
 				667748802418B8C90019CB9E /* SU_Toggle.swift in Sources */,
 				6680C75924ADE7CC0068FE53 /* SU_Binding.swift in Sources */,
@@ -1285,6 +1326,7 @@
 				6677493724236B6D0019CB9E /* SU_AllowsTightening.swift in Sources */,
 				6677491724233EC50019CB9E /* SU_ScaledToFit.swift in Sources */,
 				66B4C69124A20916000057A2 /* SU_Link.swift in Sources */,
+				6664919D25EDE460007CF182 /* CSTabSegmentView.swift in Sources */,
 				6680C75F24AED1860068FE53 /* SU_EnvironmentObject.swift in Sources */,
 				66774903242227200019CB9E /* SU_ZIndex.swift in Sources */,
 				66B4C69F24A2F445000057A2 /* SU_TabStyle.swift in Sources */,
@@ -1297,8 +1339,10 @@
 				6677491D242346FF0019CB9E /* SU_ImageScale.swift in Sources */,
 				66A0EA43242B37D6007C6B63 /* SU_RenderingMode.swift in Sources */,
 				66774945242450410019CB9E /* SU_OnTapGesture.swift in Sources */,
+				6664919225EDE2AB007CF182 /* CSMineView.swift in Sources */,
 				66774947242452E00019CB9E /* SU_OnLongPressGesture.swift in Sources */,
 				66B4C68D24A200B1000057A2 /* SU_ProgressView.swift in Sources */,
+				6664918F25EDE2A3007CF182 /* CSHomeView.swift in Sources */,
 				6632ABE524179137003AC252 /* SU_TextField.swift in Sources */,
 				66A4432224A1D40C008CEA36 /* SU_App.swift in Sources */,
 				667749AD2428BD4F0019CB9E /* SU_DeleteDisabled.swift in Sources */,
@@ -1392,10 +1436,14 @@
 				667748902418DC000019CB9E /* US_EditButton.swift in Sources */,
 				667748B7241A43730019CB9E /* SU_AnyView.swift in Sources */,
 				6677494B242463170019CB9E /* SU_HightPriorityGesture.swift in Sources */,
+				6664918525EDE034007CF182 /* CSTabBar.swift in Sources */,
 				66A0EA25242A15AE007C6B63 /* SU_PreviewDisplayName.swift in Sources */,
+				6664919525EDE2B4007CF182 /* CSModalView.swift in Sources */,
 				667748E424206D400019CB9E /* SU_SettingViewSize.swift in Sources */,
+				6664917A25EDDD5E007CF182 /* CSTabBarMainView.swift in Sources */,
 				667748F92421C23E0019CB9E /* US_AlignmentGuide.swift in Sources */,
 				667748F62420DDEB0019CB9E /* SU_CoordinateSpace.swift in Sources */,
+				6664918B25EDE072007CF182 /* CSAddTabBarItem.swift in Sources */,
 				66774982242891820019CB9E /* SU_LuminanceToAlpha.swift in Sources */,
 				66774951242494B90019CB9E /* SU_ItemProvider.swift in Sources */,
 				6677497A2424CE890019CB9E /* SU_DrawingGroup.swift in Sources */,
