@@ -17,10 +17,11 @@ struct SU_Border: View {
     var body: some View {
         VStack(spacing: 10) {
             VStack {
-                EmptyView()
+                Image(systemName: "star.fill").scaleEffect(2)
             }
             .frame(width: 100, height: 100)
-            .border(Color.black, width: 5)
+            .border(Color.black, width: 15)
+            .cornerRadius(10)
             
             VStack {
                 EmptyView()

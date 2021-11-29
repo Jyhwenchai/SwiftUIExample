@@ -21,7 +21,7 @@ struct SU_EdgesIgnoringSafeArea: View {
                 }.listRowInsets(EdgeInsets())
             }
         }
-        .edgesIgnoringSafeArea(.all)
+        .edgesIgnoringSafeArea(.all)// iOS 15 中废弃
     }
 }
 

@@ -9,14 +9,26 @@
 import SwiftUI
 
 struct SU_NavigationLink: View {
+    
+    @State var isActive: Bool = true
+    
     var body: some View {
         NavigationView {
-//                NavigationLink(destination: Text("Go to New Page")) {
-//                    Text("New Page")
-//                }
             List(0..<100) { row in
-                NavigationLink(destination: Text("Go to List Detail Page")) {
-                    Text("Page \(row)")
+                if row % 2 == 0 {
+                    NavigationLink(destination: Text("Go to List Detail Page")) {
+                        Text("Row \(row)").background(Color.green)
+                    }
+                } else if row % 3 == 0 {
+                    NavigationLink("Row \(row)") {
+                        Text("Page \(row)")
+                    }
+                } else {
+//                    NavigationLink(isActive: $isActive) {
+//                        Text("Detail Page \(row)")
+//                    } label: {
+                        Text("Row \(row)").foregroundColor(.orange)
+//                    }
                 }
             }
             .navigationBarTitle("List")

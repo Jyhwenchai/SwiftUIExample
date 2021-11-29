@@ -19,8 +19,6 @@ struct SU_Position: View {
                 .background(Color.red)
             Text("Hello, World!").position(x: 150, y: 100)
                 .background(Color.yellow)
-                .coordinateSpace(name: "hellw")
-            
         }
         
     }

@@ -15,7 +15,7 @@ import SwiftUI
 struct SU_AutoCapitalization: View {
     var body: some View {
         Text("Hello, world!")
-            .autocapitalization(.words)
+            .autocapitalization(.words) // 在 iOS 15 中废弃
     }
 }
 

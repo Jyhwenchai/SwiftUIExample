@@ -16,17 +16,39 @@ struct SU_DatePicker: View {
         return formatter
     }
     
+    let dateRange: ClosedRange<Date> = {
+        let calendar = Calendar.current
+        let startComponents = DateComponents(year: 2021, month: 1, day: 1)
+        let endComponents = DateComponents(year: 2021, month: 12, day: 31, hour: 23, minute: 59, second: 59)
+        return calendar.date(from:startComponents)!
+            ...
+            calendar.date(from:endComponents)!
+    }()
+    
     @State private var date = Date()
     
     var body: some View {
         VStack {
-//            DatePicker(selection: $date, in: ...Date(), displayedComponents: .date) {
-//                Text("Select a date")
-//            }
+            // `init(selection:displayedComponents:label:)`
             DatePicker(selection: $date, in: ...Date(), displayedComponents: .hourAndMinute) {
                 Text("Date is \(date, formatter: dateFormatter)")
             }
 
+            // `init(_:selection:displayedComponents:)`
+            DatePicker(
+                    "Start Date",
+                    selection: $date,
+                    displayedComponents: [.date]
+                )
+                .datePickerStyle(.graphical)
+            
+            // `init(_:selection:in:displayedComponents:)`
+            DatePicker(
+                    "Start Date",
+                     selection: $date,
+                     in: dateRange,
+                     displayedComponents: [.date, .hourAndMinute]
+                )
         }
     }
 }

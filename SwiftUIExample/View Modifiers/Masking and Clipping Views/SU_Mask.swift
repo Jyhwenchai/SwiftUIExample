@@ -18,7 +18,7 @@ struct SU_Mask: View {
             Color(.blue).frame(width: 100, height: 100)
                 .mask(Text("Hello, World!").frame(width: 0, height: 0, alignment: .center))
             Image("3")
-                .mask(Circle())
+                .mask(Circle()) // 在 iOS 15 废弃
         }
     }
 }

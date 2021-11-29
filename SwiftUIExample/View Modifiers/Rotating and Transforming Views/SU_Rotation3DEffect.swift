@@ -23,7 +23,7 @@ struct SU_Rotation3DEffect: View {
         Text("Hello, World!")
             .font(.largeTitle)
             .foregroundColor(.yellow)
-            .rotation3DEffect(.degrees(45), axis: (x: 1, y: 0, z: 0),anchorZ: -60, perspective: 1)
+            .rotation3DEffect(.degrees(45), axis: (x: 1, y: 0, z: 0), anchorZ: -40, perspective: 1)
     }
 }
 

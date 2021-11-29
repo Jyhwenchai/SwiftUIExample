@@ -41,7 +41,7 @@ struct SU_Gesture: View {
                 }
             }
 
-        // 迫使用户长按然后拖动的组合手势
+        // 组合手势，只有 pressGesture 手势成功后才能触发 dragGesture
         let combined = pressGesture.sequenced(before: dragGesture)
 
         // 一个64x64的圆圈，在拖动时会放大，将其偏移设置为我们从拖动手势返回的位置，并使用我们的组合手势

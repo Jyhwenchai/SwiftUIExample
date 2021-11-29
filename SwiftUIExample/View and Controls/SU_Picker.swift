@@ -13,12 +13,23 @@ struct SU_Picker: View {
     @State private var selectedIndex = 1
     var body: some View {
         VStack {
-            Picker(selection: $selectedIndex, label: Text("Strength")) {
+            // `init(selection:content:label:)`
+            Picker(selection: $selectedIndex, label: Text("Number")) {
                 ForEach(0 ..< numbers.count) {
                     Text(self.numbers[$0])
                 }
             }
+            
             Text("You selected: \(numbers[selectedIndex])")
+            
+            // `init(_:selection:content:)`
+            Picker("Number", selection: $selectedIndex) {
+                 ForEach(0 ..< numbers.count) {
+                    Text(self.numbers[$0])
+                }
+            }
+            .pickerStyle(.segmented)
+            
         }
     }
 }

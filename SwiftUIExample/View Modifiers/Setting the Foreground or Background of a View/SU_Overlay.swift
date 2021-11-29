@@ -19,7 +19,7 @@ struct SU_Overlay: View {
                 Color(.orange)
                 Text("Hello, World!")
             }
-        }.overlay(Color(.black).opacity(0.3))
+        }.overlay(Text("This is a Overlay View").offset(x: 0, y: 100))
     }
 }
 

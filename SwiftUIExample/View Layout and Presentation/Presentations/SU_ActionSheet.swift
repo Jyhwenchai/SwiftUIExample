@@ -8,7 +8,7 @@
 
 import SwiftUI
 
-#warning("TODO: 如何自定义 ActionSheet 中的文本样式")
+// 在 iOS15 中废弃，使用类似 `confirmationDialog(_:isPresented:titleVisibility:presenting:actions:message:)` 修改器替代
 struct SU_ActionSheet: View {
     @State var showActionSheet = false
     var body: some View {

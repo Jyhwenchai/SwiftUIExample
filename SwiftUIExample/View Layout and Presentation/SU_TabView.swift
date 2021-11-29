@@ -44,9 +44,10 @@ struct SU_TabView: View {
                 Text("TabThree")
             }.tag(2)
             
-            Text("fdfdf").tabItem {
-                Text("Select Page: \(self.selectIndex)")
-            }
+            Text("The Last Tab")
+                .tabItem {
+                    Text("Select Page: \(self.selectIndex)")
+                }
         }
     }
 }

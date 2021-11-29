@@ -9,17 +9,18 @@
 import SwiftUI
 
 /**
- 由于在 From 中最多只能放置10个视图，所以当你想要放置更多视图的时候你可以使用 Group 对视图进行分组，但实际上分组的视图与不分组时并没有什么区别。
+ 由于在一些容器视图中（例如：Form、HStack、VStack、Section）最多只能放置10个视图，所以当你想要放置更多视图的时候你可以使用 Group 对视图进行分组，但实际上分组的视图与不分组时并没有什么区别。
  */
 
 struct SU_Group: View {
     var body: some View {
         Form {
             Group {
-                Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-                Text("Hello, World!")
-                Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+                Text("SwiftUI")
+                Text("Combine")
+                Text("Swift System")
             }
+            .font(.headline)
         }
     }
 }

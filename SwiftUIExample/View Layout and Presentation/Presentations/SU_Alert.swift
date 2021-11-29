@@ -8,6 +8,7 @@
 
 import SwiftUI
 
+// 在 iOS15 中废弃，使用类似 `alert(_:isPresented:presenting:actions:message:)` 替代
 struct SU_Alert: View {
     @State var showAlert = false
     var body: some View {

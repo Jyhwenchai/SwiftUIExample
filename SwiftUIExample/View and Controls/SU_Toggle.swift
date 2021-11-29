@@ -11,12 +11,17 @@ import SwiftUI
 struct SU_Toggle: View {
     @State var isOpen: Bool = false
     var body: some View {
-        Toggle(isOn: $isOpen) {
-            Text(isOpen ? "open" : "close")
+        VStack {
+            Toggle(isOn: $isOpen) {
+                Text(isOpen ? "open" : "close")
+            }
+            .fixedSize()
+            .toggleStyle(.switch)
+            //        .labelsHidden()
+            
+            Toggle("\(isOpen ? "open" : "close")", isOn: $isOpen)
+                .fixedSize()
         }
-        .fixedSize()
-        .toggleStyle(SwitchToggleStyle())
-//        .labelsHidden()
     }
 }
 

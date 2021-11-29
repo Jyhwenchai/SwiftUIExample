@@ -20,7 +20,7 @@ struct SU_RotationEffect: View {
         VStack(spacing: 200) {
             // 应用 Angle 指定旋转角度, 最终旋转30度
             Text("Hello, World!")
-            .rotationEffect(Angle(degrees: 30), anchor: .center)
+                .rotationEffect(Angle(degrees: 30), anchor: .center)
             
             // 应用 Angle 指定旋转弧度，最终旋转45度
             Text("Hello, World!")

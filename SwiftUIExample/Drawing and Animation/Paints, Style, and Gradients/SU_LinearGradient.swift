@@ -12,10 +12,19 @@ struct SU_LinearGradient: View {
     let gradient = LinearGradient(gradient: Gradient(colors: [.red, .yellow, .blue]), startPoint: .leading, endPoint: .trailing)
     
     var body: some View {
-        Circle()
-            .fill(Color.gray)
-            .background(gradient)
-            .frame(width: 200, height: 200, alignment: .center)
+        if #available(iOS 15.0, *) {
+            Circle()
+                .fill(Color.gray)
+                .background(content: {
+                    gradient
+                })
+                .frame(width: 200, height: 200, alignment: .center)
+        } else {
+            Circle()
+                .fill(Color.gray)
+                .background(gradient)
+                .frame(width: 200, height: 200, alignment: .center)
+        }
     }
 }
 

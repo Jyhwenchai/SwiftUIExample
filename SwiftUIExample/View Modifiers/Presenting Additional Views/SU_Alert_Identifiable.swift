@@ -20,13 +20,33 @@ struct Print: Identifiable {
 struct SU_Alert_Identifiable: View {
 
     @State private var selectedUser: Print? = nil
+    @State var isAlert: Bool = false
     var body: some View {
-       Text("Hello, World!")
-        .onTapGesture {
-            self.selectedUser = Print(id: 100000, text: "Hello, World")
-        }
-        .alert(item: $selectedUser) { print in
-            Alert(title: Text("id \(print.id)"), message: Text(print.text))
+        if #available(iOS 15.0, *) {
+            Text("Hello, World!")
+                .onTapGesture {
+                    isAlert.toggle()
+                    self.selectedUser = Print(id: 100000, text: "Hello, World")
+                }
+                .alert("Title", isPresented: $isAlert, presenting: selectedUser, actions: { print in
+                        
+                    Button("OK") {}
+                    Button("Cancel") {}
+                    Button(action: {}) {
+                        Label("Retry", systemImage: "circle.grid.cross.left.fill")// 无法渲染图片
+                    }
+                }) { detail in
+                    Text(detail.text)   // 只能渲染一个
+                    Text(detail.text)
+                }
+        } else {
+            Text("Hello, World!")
+                .onTapGesture {
+                    self.selectedUser = Print(id: 100000, text: "Hello, World")
+                }
+                .alert(item: $selectedUser) { print in
+                    Alert(title: Text("id \(print.id)"), message: Text(print.text))
+                }
         }
     }
 }

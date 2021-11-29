@@ -9,7 +9,7 @@
 import SwiftUI
 import Combine
 
-#warning("TODO: 待补充")
+// 当事件(这里为timer)触发后 `onReceive` 会触发一次回调，下面示例运行模拟器有效
 struct SU_OnReceive: View {
 
     @State var timeRemaining = 10

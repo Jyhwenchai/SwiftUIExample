@@ -8,6 +8,7 @@
 
 import SwiftUI
 
+//: 可用于向某些集合视图添加层次结构的容器视图，例如在（List、Picker、Form）中
 struct SU_Section: View {
     
     private var header: some View {
@@ -29,10 +30,16 @@ struct SU_Section: View {
     var body: some View {
         Form {
             Section(header: header, footer: footer) {
-                Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-                Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-                Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-                Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+                Text("Hello, World!")
+                Text("Hello, World!")
+                Text("Hello, World!")
+                Text("Hello, World!")
+            }
+            Section(header: header, footer: footer) {
+                Text("Hello, World!")
+                Text("Hello, World!")
+                Text("Hello, World!")
+                Text("Hello, World!")
             }
         }
     }

@@ -12,8 +12,8 @@ import SwiftUI
  `func onLongPressGesture(minimumDuration: Double = 0.5, maximumDistance: CGFloat = 10, pressing: ((Bool) -> Void)? = nil, perform action: @escaping () -> Void) -> some View`
  
  为视图添加长按手势。
- `minimumDuration` 触发手势所需的最短事件
- `maximumDistance` 暂时未知用途
+ `minimumDuration` 触发手势所需的最短时间
+ `maximumDistance` 手指或光标执行长按时可以移动的最大距离，超过此距离手势失效
  `pressing` 可以监听事件变化的过程
  `action` 长按事件完成回调
  */
@@ -24,12 +24,11 @@ struct SU_OnLongPressGesture: View {
             .fill(Color.orange)
             .frame(width: scale ? 200 : 100, height: scale ? 200 : 100)
             .animation(.spring())
-            .onLongPressGesture(minimumDuration: 0.15, maximumDistance: 10, pressing: { state in
-                print("pressing...")
-            }) {
+            .onLongPressGesture(minimumDuration: 0.15, maximumDistance: 10, perform: {
                 self.scale.toggle()
-            }
-            
+            }, onPressingChanged: { changed in
+                print("pressing...")
+            })
     }
 }
 

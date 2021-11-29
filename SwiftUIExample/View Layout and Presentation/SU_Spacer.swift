@@ -13,8 +13,10 @@ import SwiftUI
  */
 struct SU_Spacer: View {
     var body: some View {
-//        defaultLayout()
-        usingSpacerLayout()
+        VStack {
+            defaultLayout()
+            usingSpacerLayout()
+        }
     }
     
     func defaultLayout() -> some View {

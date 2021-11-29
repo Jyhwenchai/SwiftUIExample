@@ -13,16 +13,14 @@ import SwiftUI
  */
 
 struct SU_popover: View {
-    @State var showActionSheet = false
+    @State var isShowingPopover = false
     var body: some View {
-        Button(action: {
-            self.showActionSheet = true
-        }) {
-            Text("show alert")
-        }
-        .popover(isPresented: $showActionSheet, arrowEdge: .leading) {
-            Text("New Page")
-        }
+        Button("Show Popover", action: {
+                   self.isShowingPopover = true
+               })
+               .popover(isPresented: $isShowingPopover) {
+                   Text("Popover Content")
+               }
     }
 }
 

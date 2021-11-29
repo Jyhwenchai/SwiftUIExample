@@ -11,7 +11,7 @@ import SwiftUI
 struct SU_Image: View {
     var body: some View {
         Image(systemName: "airplayvideo")
-            .resizable()
+            .resizable()    // 设置 resizable 后可以调整图片的大小
             .aspectRatio(contentMode: .fit)
             .scaleEffect(1)
             .frame(width: 200, height: 200, alignment: .center)

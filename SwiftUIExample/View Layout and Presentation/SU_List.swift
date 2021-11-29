@@ -15,8 +15,8 @@ struct SU_List: View {
     var body: some View {
         NavigationView {
 //            listInit_1()
-//            listInit_2()
-            listInit_3()
+            listInit_2()
+//            listInit_3()
         }
     }
     

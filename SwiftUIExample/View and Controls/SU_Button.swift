@@ -9,11 +9,28 @@
 import SwiftUI
 
 struct SU_Button: View {
+    
+    @State var isClicked: Bool = false
+    
     var body: some View {
-        Button("Button", action: {
-            print("Button clicked.")
-        })
-        .buttonStyle(BorderlessButtonStyle())
+        VStack {
+            // `init(_:action:)`
+            Button("Button", action: {
+                print("Button clicked.")
+            }).buttonStyle(BorderlessButtonStyle())
+            
+            // `init(action:label:)`
+            Button {
+                isClicked.toggle()
+            } label: {
+                if isClicked {
+                    Label("Rain", systemImage: "cloud.rain")
+                } else {
+                    Label("Sun", systemImage: "sun.max")
+                }
+            }
+        }
+        
     }
 }
 

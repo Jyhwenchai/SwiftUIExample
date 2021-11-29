@@ -47,6 +47,8 @@ import SwiftUI
  "Apple Watch Series 3 - 42mm"
  "Apple Watch Series 4 - 40mm"
  "Apple Watch Series 4 - 44mm"
+ 
+ 使用命令 xcrun simctl list devicetypes 可列出上述设备
 ```
  */
 struct SU_PreviewDevice: View {

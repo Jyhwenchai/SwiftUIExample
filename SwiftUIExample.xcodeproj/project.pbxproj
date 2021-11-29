@@ -17,6 +17,8 @@
 		6632ABE524179137003AC252 /* SU_TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6632ABE424179137003AC252 /* SU_TextField.swift */; };
 		6642302C24AF183100BD0783 /* SU_ExclusiveGesture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6642302B24AF183100BD0783 /* SU_ExclusiveGesture.swift */; };
 		6642302E24AF1AC500BD0783 /* SU_GestureState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6642302D24AF1AC500BD0783 /* SU_GestureState.swift */; };
+		66454F22274F8456009661B1 /* SU_15_badge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66454F21274F8456009661B1 /* SU_15_badge.swift */; };
+		66454F242754578B009661B1 /* SU_15_TimeLineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66454F232754578B009661B1 /* SU_15_TimeLineView.swift */; };
 		6664917A25EDDD5E007CF182 /* CSTabBarMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6664917925EDDD5E007CF182 /* CSTabBarMainView.swift */; };
 		6664917E25EDDDB3007CF182 /* TabTag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6664917D25EDDDB3007CF182 /* TabTag.swift */; };
 		6664918225EDDDFA007CF182 /* CSTabBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6664918125EDDDFA007CF182 /* CSTabBarItem.swift */; };
@@ -216,6 +218,14 @@
 		66B4C6A124A2F868000057A2 /* SU_GroupBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66B4C6A024A2F868000057A2 /* SU_GroupBox.swift */; };
 		66B4C6A324A2FB31000057A2 /* SU_OutlineGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66B4C6A224A2FB31000057A2 /* SU_OutlineGroup.swift */; };
 		66B4C6A524A2FD5C000057A2 /* SU_DisclosureGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66B4C6A424A2FD5C000057A2 /* SU_DisclosureGroup.swift */; };
+		66C0D794274CE837005CA4D2 /* SU_15_AsyncImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66C0D793274CE837005CA4D2 /* SU_15_AsyncImage.swift */; };
+		66C0D799274E2418005CA4D2 /* SU_15_Refreshable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66C0D798274E2418005CA4D2 /* SU_15_Refreshable.swift */; };
+		66C0D79B274E38D4005CA4D2 /* SU_15_ListRowSeparatorTint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66C0D79A274E38D4005CA4D2 /* SU_15_ListRowSeparatorTint.swift */; };
+		66C0D79D274E3C21005CA4D2 /* SU_15_ListRowSeparator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66C0D79C274E3C21005CA4D2 /* SU_15_ListRowSeparator.swift */; };
+		66C0D79F274F182E005CA4D2 /* SU_15_SwipeActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66C0D79E274F182E005CA4D2 /* SU_15_SwipeActions.swift */; };
+		66C0D7A1274F2573005CA4D2 /* SU_15_Searchable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66C0D7A0274F2573005CA4D2 /* SU_15_Searchable.swift */; };
+		66C0D7A3274F2F80005CA4D2 /* SU_15_Text.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66C0D7A2274F2F80005CA4D2 /* SU_15_Text.swift */; };
+		66C0D7A5274F30E3005CA4D2 /* SU_15_Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66C0D7A4274F30E3005CA4D2 /* SU_15_Button.swift */; };
 		66F3B86324A1F183005B6FC6 /* SU_SignInWithAppleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F3B86224A1F183005B6FC6 /* SU_SignInWithAppleButton.swift */; };
 		66F3B86524A1F378005B6FC6 /* SU_ColorPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F3B86424A1F378005B6FC6 /* SU_ColorPicker.swift */; };
 /* End PBXBuildFile section */
@@ -233,6 +243,8 @@
 		6632ABE424179137003AC252 /* SU_TextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SU_TextField.swift; sourceTree = "<group>"; };
 		6642302B24AF183100BD0783 /* SU_ExclusiveGesture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SU_ExclusiveGesture.swift; sourceTree = "<group>"; };
 		6642302D24AF1AC500BD0783 /* SU_GestureState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SU_GestureState.swift; sourceTree = "<group>"; };
+		66454F21274F8456009661B1 /* SU_15_badge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SU_15_badge.swift; sourceTree = "<group>"; };
+		66454F232754578B009661B1 /* SU_15_TimeLineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SU_15_TimeLineView.swift; sourceTree = "<group>"; };
 		6664917925EDDD5E007CF182 /* CSTabBarMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSTabBarMainView.swift; sourceTree = "<group>"; };
 		6664917D25EDDDB3007CF182 /* TabTag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabTag.swift; sourceTree = "<group>"; };
 		6664918125EDDDFA007CF182 /* CSTabBarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSTabBarItem.swift; sourceTree = "<group>"; };
@@ -436,6 +448,14 @@
 		66B4C6A024A2F868000057A2 /* SU_GroupBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SU_GroupBox.swift; sourceTree = "<group>"; };
 		66B4C6A224A2FB31000057A2 /* SU_OutlineGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SU_OutlineGroup.swift; sourceTree = "<group>"; };
 		66B4C6A424A2FD5C000057A2 /* SU_DisclosureGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SU_DisclosureGroup.swift; sourceTree = "<group>"; };
+		66C0D793274CE837005CA4D2 /* SU_15_AsyncImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SU_15_AsyncImage.swift; sourceTree = "<group>"; };
+		66C0D798274E2418005CA4D2 /* SU_15_Refreshable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SU_15_Refreshable.swift; sourceTree = "<group>"; };
+		66C0D79A274E38D4005CA4D2 /* SU_15_ListRowSeparatorTint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SU_15_ListRowSeparatorTint.swift; sourceTree = "<group>"; };
+		66C0D79C274E3C21005CA4D2 /* SU_15_ListRowSeparator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SU_15_ListRowSeparator.swift; sourceTree = "<group>"; };
+		66C0D79E274F182E005CA4D2 /* SU_15_SwipeActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SU_15_SwipeActions.swift; sourceTree = "<group>"; };
+		66C0D7A0274F2573005CA4D2 /* SU_15_Searchable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SU_15_Searchable.swift; sourceTree = "<group>"; };
+		66C0D7A2274F2F80005CA4D2 /* SU_15_Text.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SU_15_Text.swift; sourceTree = "<group>"; };
+		66C0D7A4274F30E3005CA4D2 /* SU_15_Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SU_15_Button.swift; sourceTree = "<group>"; };
 		66F3B86224A1F183005B6FC6 /* SU_SignInWithAppleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SU_SignInWithAppleButton.swift; sourceTree = "<group>"; };
 		66F3B86424A1F378005B6FC6 /* SU_ColorPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SU_ColorPicker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -491,6 +511,7 @@
 		6632ABCE24178BCD003AC252 /* SwiftUIExample */ = {
 			isa = PBXGroup;
 			children = (
+				66C0D791274CE7D6005CA4D2 /* New in iOS 15 */,
 				66A4431F24A1CDE9008CEA36 /* New in iOS 14 */,
 				66A0EA2A242AEC7A007C6B63 /* Others */,
 				6632ABE324178F4A003AC252 /* View and Controls */,
@@ -1146,6 +1167,39 @@
 			path = "View and Controls";
 			sourceTree = "<group>";
 		};
+		66C0D791274CE7D6005CA4D2 /* New in iOS 15 */ = {
+			isa = PBXGroup;
+			children = (
+				66C0D797274E23CA005CA4D2 /* View Modifiers */,
+				66C0D792274CE819005CA4D2 /* View and Controls */,
+			);
+			path = "New in iOS 15";
+			sourceTree = "<group>";
+		};
+		66C0D792274CE819005CA4D2 /* View and Controls */ = {
+			isa = PBXGroup;
+			children = (
+				66C0D793274CE837005CA4D2 /* SU_15_AsyncImage.swift */,
+				66C0D7A2274F2F80005CA4D2 /* SU_15_Text.swift */,
+				66C0D7A4274F30E3005CA4D2 /* SU_15_Button.swift */,
+				66454F232754578B009661B1 /* SU_15_TimeLineView.swift */,
+			);
+			path = "View and Controls";
+			sourceTree = "<group>";
+		};
+		66C0D797274E23CA005CA4D2 /* View Modifiers */ = {
+			isa = PBXGroup;
+			children = (
+				66C0D798274E2418005CA4D2 /* SU_15_Refreshable.swift */,
+				66C0D79A274E38D4005CA4D2 /* SU_15_ListRowSeparatorTint.swift */,
+				66C0D79C274E3C21005CA4D2 /* SU_15_ListRowSeparator.swift */,
+				66C0D79E274F182E005CA4D2 /* SU_15_SwipeActions.swift */,
+				66C0D7A0274F2573005CA4D2 /* SU_15_Searchable.swift */,
+				66454F21274F8456009661B1 /* SU_15_badge.swift */,
+			);
+			path = "View Modifiers";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1246,6 +1300,7 @@
 				66774905242228620019CB9E /* SU_Overlay.swift in Sources */,
 				6677498F2428A49F0019CB9E /* SU_ToggleStyle.swift in Sources */,
 				6677498B2428A0840019CB9E /* SU_PickerStyle.swift in Sources */,
+				66C0D794274CE837005CA4D2 /* SU_15_AsyncImage.swift in Sources */,
 				66A4432424A1D919008CEA36 /* SU_OpenURLAction.swift in Sources */,
 				6677493924236F1C0019CB9E /* SU_ TextContentType.swift in Sources */,
 				6677492224234AD30019CB9E /* SU_Rotation3DEffect.swift in Sources */,
@@ -1261,6 +1316,7 @@
 				6677493D242376810019CB9E /* SU_DisableAutocorrection.swift in Sources */,
 				6677494224237E080019CB9E /* SU_Transition.swift in Sources */,
 				6680C79724AF03180068FE53 /* SU_DragGesture.swift in Sources */,
+				66C0D7A5274F30E3005CA4D2 /* SU_15_Button.swift in Sources */,
 				667748C4241B6CD50019CB9E /* SU_Ellipse.swift in Sources */,
 				6677496E2424C5990019CB9E /* SU_Brighttness.swift in Sources */,
 				66774924242351230019CB9E /* SU_ ProjectionEffect.swift in Sources */,
@@ -1277,6 +1333,7 @@
 				667748AC241A301F0019CB9E /* SU_TabView.swift in Sources */,
 				6677489C241A0D710019CB9E /* SU_Form.swift in Sources */,
 				66B4C69924A20C8D000057A2 /* SU_LazyVGrid.swift in Sources */,
+				66C0D79D274E3C21005CA4D2 /* SU_15_ListRowSeparator.swift in Sources */,
 				6677493B2423754C0019CB9E /* SU_AutoCapitalization.swift in Sources */,
 				667748CA241B7E800019CB9E /* SU_ScaledShape.swift in Sources */,
 				6677493524236A430019CB9E /* SU_LineSpacing.swift in Sources */,
@@ -1312,6 +1369,7 @@
 				6680C75B24AEC77D0068FE53 /* SU_ObservedObject.swift in Sources */,
 				667748B5241A3D4B0019CB9E /* SU_sheet.swift in Sources */,
 				667748D5241B8C520019CB9E /* SU_ImagePaint.swift in Sources */,
+				66C0D7A3274F2F80005CA4D2 /* SU_15_Text.swift in Sources */,
 				6677498D2428A2F60019CB9E /* SU_TextFieldStyle.swift in Sources */,
 				6680C79524AF007A0068FE53 /* SU_LongPressGesture.swift in Sources */,
 				6680C75724ADE5140068FE53 /* SU_State.swift in Sources */,
@@ -1328,12 +1386,15 @@
 				66B4C69124A20916000057A2 /* SU_Link.swift in Sources */,
 				6664919D25EDE460007CF182 /* CSTabSegmentView.swift in Sources */,
 				6680C75F24AED1860068FE53 /* SU_EnvironmentObject.swift in Sources */,
+				66C0D799274E2418005CA4D2 /* SU_15_Refreshable.swift in Sources */,
 				66774903242227200019CB9E /* SU_ZIndex.swift in Sources */,
+				66C0D79F274F182E005CA4D2 /* SU_15_SwipeActions.swift in Sources */,
 				66B4C69F24A2F445000057A2 /* SU_TabStyle.swift in Sources */,
 				6677491224231F870019CB9E /* SU_Mask.swift in Sources */,
 				667749692424C1700019CB9E /* SU_Shadow.swift in Sources */,
 				6642302E24AF1AC500BD0783 /* SU_GestureState.swift in Sources */,
 				6680C75224ADCA5A0068FE53 /* SU_UIViewRepresentable.swift in Sources */,
+				66C0D7A1274F2573005CA4D2 /* SU_15_Searchable.swift in Sources */,
 				6680C79B24AF0B350068FE53 /* SU_RotationGesture.swift in Sources */,
 				66A0EA3A242B0B1C007C6B63 /* SU_EquatableView.swift in Sources */,
 				6677491D242346FF0019CB9E /* SU_ImageScale.swift in Sources */,
@@ -1348,6 +1409,8 @@
 				667749AD2428BD4F0019CB9E /* SU_DeleteDisabled.swift in Sources */,
 				6677492D242360EC0019CB9E /* SU_LineLimit.swift in Sources */,
 				667749AB2428BB380019CB9E /* SU_Disabled.swift in Sources */,
+				66454F242754578B009661B1 /* SU_15_TimeLineView.swift in Sources */,
+				66454F22274F8456009661B1 /* SU_15_badge.swift in Sources */,
 				667748A2241A17990019CB9E /* SU_Form_Group_Section.swift in Sources */,
 				6680C79D24AF0C5D0068FE53 /* SU_SequenceGesture.swift in Sources */,
 				667749012422213E0019CB9E /* SU_Background.swift in Sources */,
@@ -1402,6 +1465,7 @@
 				667748B3241A3CD40019CB9E /* SU_popover.swift in Sources */,
 				667748CE241B871E0019CB9E /* SU_OffsetShape.swift in Sources */,
 				66A4432724A1DA53008CEA36 /* SU_TextEditor.swift in Sources */,
+				66C0D79B274E38D4005CA4D2 /* SU_15_ListRowSeparatorTint.swift in Sources */,
 				6642302C24AF183100BD0783 /* SU_ExclusiveGesture.swift in Sources */,
 				667748B9241A45DA0019CB9E /* SU_TupleView.swift in Sources */,
 				667749152423232F0019CB9E /* SU_ScaledToFill.swift in Sources */,

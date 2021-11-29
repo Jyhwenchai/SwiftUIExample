@@ -10,7 +10,7 @@ import SwiftUI
 
 
 /**
- 当我们想忽略数据中的某些更改，这正是我们可以使用 `EquatableView` 或 `.equatable()` 。
+ 当我们想忽略数据中的某些更改以优化视图渲染的频率，这正是我们可以使用 `EquatableView` 或 `.equatable()` 的时候。
  
  使用 `.equatable()` 与 `EquatableView` 两者本质上没有区别
  

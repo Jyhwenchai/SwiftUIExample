@@ -54,8 +54,8 @@ struct RingView: View {
                 .trim(from: show ? progress : 1, to: 1)
                 .stroke(LinearGradient(gradient: Gradient(colors: [Color(startColor), Color(endColor)]), startPoint: .topLeading, endPoint: .bottomTrailing), style: StrokeStyle(lineWidth: 10, lineCap: .round, lineJoin: .round))
                 .frame(width: width * multiplier, height: height * multiplier)
-                .rotationEffect(.degrees(90))
-                .rotation3DEffect(.degrees(180), axis: (x: 1, y: 0, z: 0))
+                .rotationEffect(.degrees(90))   // 绕z轴旋转，使起点位于底部
+                .rotation3DEffect(.degrees(180), axis: (x: 1, y: 0, z: 0))  // 水平翻转，翻转后动画方向相反，起点位于顶部
                 .shadow(color: Color(endColor).opacity(0.3), radius: 3 * multiplier, x: 0, y: 3 * multiplier)
                 .rotationEffect(.degrees(360))
                 .animation(.easeInOut(duration: 0.4))

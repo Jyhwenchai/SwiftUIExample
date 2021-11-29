@@ -63,14 +63,14 @@ struct SU_UIViewControllerRepresentable: View {
     var body: some View {
         VStack {
             
-            Image(uiImage: self.image)
+            Image(uiImage: image)
                 .resizable()
                 .scaledToFill()
                 .frame(minWidth: 0, maxWidth: .infinity)
                 .edgesIgnoringSafeArea(.all)
             
             Button(action: {
-                self.isShowPhotoLibrary = true
+                isShowPhotoLibrary = true
             }) {
                 Label(
                     title: { Text("Photo library") },

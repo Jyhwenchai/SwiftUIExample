@@ -15,10 +15,17 @@ import SwiftUI
  */
 struct SU_AllowsTightening: View {
     var body: some View {
-        Text("Hello, World!")
-            .font(.largeTitle)
-            .frame(width: 180, height: 50)
-            .allowsTightening(true)
+        VStack {
+            Text("Hello, World!")
+                .font(.largeTitle)
+                .frame(width: 180, height: 50)
+                .background(Color.green)
+            Text("Hello, World!")
+                .font(.largeTitle)
+                .frame(width: 180, height: 50)
+                .background(Color.green)
+                .allowsTightening(true)
+        }
     }
 }
 

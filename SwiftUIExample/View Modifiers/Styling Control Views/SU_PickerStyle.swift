@@ -24,24 +24,28 @@ struct SU_PickerStyle: View {
     var body: some View {
         NavigationView {
             Form {
-                Section {
-                    Picker(selection: $selectedIndex, label: Text("Strength")) {
-                        ForEach(0 ..< numbers.count) {
-                            Text(self.numbers[$0])
+                VStack {
+                    Section {
+                        Picker(selection: $selectedIndex, label: Text("Strength")) {
+                            ForEach(0 ..< numbers.count) {
+                                Text(self.numbers[$0])
+                            }
                         }
+                        .pickerStyle(DefaultPickerStyle())
                     }
-                    .pickerStyle(DefaultPickerStyle())
-                }
-                
-                Section {
-                    Picker(selection: $selectedIndex, label: Text("Strength")) {
-                        ForEach(0 ..< numbers.count) {
-                            Text(self.numbers[$0])
+                    Spacer(minLength: 50)
+                    Divider()
+                    Spacer(minLength: 50)
+                    Section {
+                        Picker(selection: $selectedIndex, label: Text("Strength")) {
+                            ForEach(0 ..< numbers.count) {
+                                Text(self.numbers[$0])
+                            }
                         }
+                        .pickerStyle(SegmentedPickerStyle())
                     }
-                    .pickerStyle(SegmentedPickerStyle())
+                    
                 }
-                
                 Section {
                     Picker(selection: $selectedIndex, label: Text("Strength")) {
                         ForEach(0 ..< numbers.count) {
@@ -53,6 +57,7 @@ struct SU_PickerStyle: View {
             }
             .navigationBarTitle("PickerStyle")
         }
+        
     }
 }
 

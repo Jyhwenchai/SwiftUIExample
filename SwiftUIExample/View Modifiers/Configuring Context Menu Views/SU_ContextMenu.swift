@@ -19,14 +19,14 @@ import SwiftUI
 struct SU_ContextMenu: View {
     var body: some View {
         VStack(spacing: 100) {
-            Text("Hello, World!")
+            Text("Long Press Me")
             .contextMenu(ContextMenu(menuItems: {
                 Button(action: {}) {
                     Text("copy")
                 }
             }))
             
-            Text("Control Click Me")
+            Text("Long Press Me")
                 .contextMenu {
                     Button(action: { print("added") } ) { Text("Add") }
                     Button(action: { print("removed") } ) { Text("Remove") }
