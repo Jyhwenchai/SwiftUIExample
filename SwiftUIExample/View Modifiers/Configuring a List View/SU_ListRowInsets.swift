@@ -15,8 +15,11 @@ struct SU_ListRowInsets: View {
                 ForEach(0..<100) {
                     Text("Row \($0)")
                 }
-                .listRowInsets(.init(top: 20, leading: 20, bottom: 20, trailing: 20))
+//                .listRowInsets(.init(top: 20, leading: 20, bottom: 20, trailing: 20))
+                listRowInsets(.init(top: 0, leading: 0, bottom: 0, trailing: 0))
             }
+            .listStyle(.plain)
+            .ignoresSafeArea(edges: .horizontal)
             .navigationBarTitle("List")
         }
     }
