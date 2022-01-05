@@ -25,7 +25,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         if let windowScene = scene as? UIWindowScene {
             let window = UIWindow(windowScene: windowScene)
             if #available(iOS 15.0.0, *) {
-                let contentView = CSInfiniteScrollView()
+                let contentView = CSInfiniteScrollView2()
                 window.rootViewController = UIHostingController(rootView: contentView)
             } else {
                 // Fallback on earlier versions

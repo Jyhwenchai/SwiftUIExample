@@ -10,7 +10,7 @@ import SwiftUI
 
 struct CSInfiniteScrollView: View {
     
-    @StateObject var listData = GetData()
+    @StateObject fileprivate var listData = GetData()
     
     var body: some View {
         NavigationView {
@@ -31,11 +31,11 @@ struct CSInfiniteScrollView: View {
     }
 }
 
-struct CellView: View {
+private struct CellView: View {
     
     var doc: Doc
     var isLast: Bool
-    @StateObject var listData: GetData
+    @StateObject fileprivate var listData: GetData
     
     var body: some View {
         VStack(alignment: .leading, spacing: 12) {
@@ -59,7 +59,7 @@ struct CSInfiniteScrollView_Previews: PreviewProvider {
     }
 }
 
-class GetData: ObservableObject {
+fileprivate class GetData: ObservableObject {
     @Published var data = [Doc]()
     @Published var count = 1
     @Published var isLoading: Bool = false
@@ -103,15 +103,15 @@ class GetData: ObservableObject {
     }
 }
 
-struct Detail: Decodable {
+private struct Detail: Decodable {
     var response: Response
 }
 
-struct Response: Decodable {
+private struct Response: Decodable {
     var docs: [Doc]
 }
 
-struct Doc: Decodable, Identifiable, Hashable {
+private struct Doc: Decodable, Identifiable, Hashable {
     var id: String
     var journal: String
     var eissn: String

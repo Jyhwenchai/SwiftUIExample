@@ -15,6 +15,8 @@
 		6632ABD924178BD0003AC252 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6632ABD824178BD0003AC252 /* Preview Assets.xcassets */; };
 		6632ABDC24178BD0003AC252 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6632ABDA24178BD0003AC252 /* LaunchScreen.storyboard */; };
 		6632ABE524179137003AC252 /* SU_TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6632ABE424179137003AC252 /* SU_TextField.swift */; };
+		663B5F59277C335B00E0D34D /* SU_ToolBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 663B5F58277C335B00E0D34D /* SU_ToolBarItem.swift */; };
+		663B5F5B277C37D400E0D34D /* SU_ToolBarItemGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 663B5F5A277C37D400E0D34D /* SU_ToolBarItemGroup.swift */; };
 		6642302C24AF183100BD0783 /* SU_ExclusiveGesture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6642302B24AF183100BD0783 /* SU_ExclusiveGesture.swift */; };
 		6642302E24AF1AC500BD0783 /* SU_GestureState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6642302D24AF1AC500BD0783 /* SU_GestureState.swift */; };
 		66454F22274F8456009661B1 /* SU_15_badge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66454F21274F8456009661B1 /* SU_15_badge.swift */; };
@@ -29,6 +31,7 @@
 		6664919525EDE2B4007CF182 /* CSModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6664919425EDE2B4007CF182 /* CSModalView.swift */; };
 		6664919A25EDE2C8007CF182 /* CSDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6664919925EDE2C8007CF182 /* CSDetailView.swift */; };
 		6664919D25EDE460007CF182 /* CSTabSegmentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6664919C25EDE460007CF182 /* CSTabSegmentView.swift */; };
+		66731201277D429F00100A04 /* CSInfiniteScrollView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66731200277D429F00100A04 /* CSInfiniteScrollView2.swift */; };
 		667361B42417A131006D5B11 /* SU_SecureField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 667361B32417A131006D5B11 /* SU_SecureField.swift */; };
 		66750407275DF04800F2F40F /* SU_15_ControlGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66750406275DF04800F2F40F /* SU_15_ControlGroup.swift */; };
 		6677487B2418869F0019CB9E /* SU_Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6677487A2418869E0019CB9E /* SU_Image.swift */; };
@@ -243,6 +246,8 @@
 		6632ABDB24178BD0003AC252 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6632ABDD24178BD0003AC252 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6632ABE424179137003AC252 /* SU_TextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SU_TextField.swift; sourceTree = "<group>"; };
+		663B5F58277C335B00E0D34D /* SU_ToolBarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SU_ToolBarItem.swift; sourceTree = "<group>"; };
+		663B5F5A277C37D400E0D34D /* SU_ToolBarItemGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SU_ToolBarItemGroup.swift; sourceTree = "<group>"; };
 		6642302B24AF183100BD0783 /* SU_ExclusiveGesture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SU_ExclusiveGesture.swift; sourceTree = "<group>"; };
 		6642302D24AF1AC500BD0783 /* SU_GestureState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SU_GestureState.swift; sourceTree = "<group>"; };
 		66454F21274F8456009661B1 /* SU_15_badge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SU_15_badge.swift; sourceTree = "<group>"; };
@@ -257,6 +262,7 @@
 		6664919425EDE2B4007CF182 /* CSModalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSModalView.swift; sourceTree = "<group>"; };
 		6664919925EDE2C8007CF182 /* CSDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSDetailView.swift; sourceTree = "<group>"; };
 		6664919C25EDE460007CF182 /* CSTabSegmentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSTabSegmentView.swift; sourceTree = "<group>"; };
+		66731200277D429F00100A04 /* CSInfiniteScrollView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSInfiniteScrollView2.swift; sourceTree = "<group>"; };
 		667361B32417A131006D5B11 /* SU_SecureField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SU_SecureField.swift; sourceTree = "<group>"; };
 		66750406275DF04800F2F40F /* SU_15_ControlGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SU_15_ControlGroup.swift; sourceTree = "<group>"; };
 		6677487A2418869E0019CB9E /* SU_Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SU_Image.swift; sourceTree = "<group>"; };
@@ -1176,6 +1182,8 @@
 				66B4C6A024A2F868000057A2 /* SU_GroupBox.swift */,
 				66B4C6A224A2FB31000057A2 /* SU_OutlineGroup.swift */,
 				66B4C6A424A2FD5C000057A2 /* SU_DisclosureGroup.swift */,
+				663B5F58277C335B00E0D34D /* SU_ToolBarItem.swift */,
+				663B5F5A277C37D400E0D34D /* SU_ToolBarItemGroup.swift */,
 			);
 			path = "View and Controls";
 			sourceTree = "<group>";
@@ -1218,6 +1226,7 @@
 			isa = PBXGroup;
 			children = (
 				66D7686327794AEB00CFF8AA /* CSInfiniteScrollView.swift */,
+				66731200277D429F00100A04 /* CSInfiniteScrollView2.swift */,
 			);
 			path = "Infinite Scroll";
 			sourceTree = "<group>";
@@ -1436,6 +1445,7 @@
 				66454F22274F8456009661B1 /* SU_15_badge.swift in Sources */,
 				667748A2241A17990019CB9E /* SU_Form_Group_Section.swift in Sources */,
 				6680C79D24AF0C5D0068FE53 /* SU_SequenceGesture.swift in Sources */,
+				66731201277D429F00100A04 /* CSInfiniteScrollView2.swift in Sources */,
 				667749012422213E0019CB9E /* SU_Background.swift in Sources */,
 				667749642424B7F70019CB9E /* SU_AccentColor.swift in Sources */,
 				66774926242359330019CB9E /* SU_transformEffect.swift in Sources */,
@@ -1458,6 +1468,7 @@
 				667749702424C6020019CB9E /* SU_Contrast.swift in Sources */,
 				667748EF2420BA9E0019CB9E /* SU_Offset.swift in Sources */,
 				667748962419E10E0019CB9E /* SU_ForEach.swift in Sources */,
+				663B5F5B277C37D400E0D34D /* SU_ToolBarItemGroup.swift in Sources */,
 				66A0EA4B242B501B007C6B63 /* SU_ViewBuilder.swift in Sources */,
 				6677495824249DD40019CB9E /* SU_OnDisappear.swift in Sources */,
 				66A0EA3D242B2746007C6B63 /* SU_Modifier.swift in Sources */,
@@ -1488,6 +1499,7 @@
 				667748B3241A3CD40019CB9E /* SU_popover.swift in Sources */,
 				667748CE241B871E0019CB9E /* SU_OffsetShape.swift in Sources */,
 				66A4432724A1DA53008CEA36 /* SU_TextEditor.swift in Sources */,
+				663B5F59277C335B00E0D34D /* SU_ToolBarItem.swift in Sources */,
 				66C0D79B274E38D4005CA4D2 /* SU_15_ListRowSeparatorTint.swift in Sources */,
 				6642302C24AF183100BD0783 /* SU_ExclusiveGesture.swift in Sources */,
 				667748B9241A45DA0019CB9E /* SU_TupleView.swift in Sources */,
