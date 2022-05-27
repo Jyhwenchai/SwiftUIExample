@@ -8,6 +8,6 @@
 
 import Foundation
 
-class User: ObservableObject {
+class SU_User: ObservableObject {
     @Published var name = "ilosic"
 }
