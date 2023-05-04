@@ -29,7 +29,7 @@ struct SU_Animation_01: View {
 //                    .animation(Animation.easeIn(duration: 2))
 //                    .animation(.easeInOut(duration: 1.0))
                     .animation(.default)
-                
+
                 Button(action: { self.showCircle.toggle() }) {
                     Text("color / opacity / frame Animate")
                 }

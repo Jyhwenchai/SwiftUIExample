@@ -18,43 +18,43 @@ import SwiftUI
  */
 struct SU_GeometryReader: View {
 
-    var innerView: some View {
-        HStack {
-            Text("Left")
-            GeometryReader { geo in
-                Text("Center")
-                    .background(Color.blue)
-                    .onTapGesture {
-                        // text 相对于各个视图的位置信息
-                        print("Global center: \(geo.frame(in: .global).midX) x \(geo.frame(in: .global).midY)")
-                        print("Custom center: \(geo.frame(in: .named("Custom")).midX) x \(geo.frame(in: .named("Custom")).midY)")
-                        print("Local center: \(geo.frame(in: .local).midX) x \(geo.frame(in: .local).midY)")
-                    }
-            }
-            .background(Color.orange)
-            Text("Right")
-        }
+  var innerView: some View {
+    HStack {
+      Text("Left")
+      GeometryReader { geo in
+        Text("Center")
+          .background(Color.blue)
+          .onTapGesture {
+            // text 相对于各个视图的位置信息
+            print("Global center: \(geo.frame(in: .global).midX) x \(geo.frame(in: .global).midY)")
+            print("Custom center: \(geo.frame(in: .named("Custom")).midX) x \(geo.frame(in: .named("Custom")).midY)")
+            print("Local center: \(geo.frame(in: .local).midX) x \(geo.frame(in: .local).midY)")
+          }
+      }
+      .background(Color.orange)
+      Text("Right")
     }
-    
-    var outerView: some View {
-        VStack {
-            Text("Top")
-            innerView
-                .background(Color.green)
-            Text("Bottom")
-        }
-        .background(Color.red)
-        .coordinateSpace(name: "Custom")
+  }
+
+  var outerView: some View {
+    VStack {
+      Text("Top")
+      innerView
+        .background(Color.green)
+      Text("Bottom")
     }
-    
-    var body: some View {
-         outerView
-    }
+    .background(Color.red)
+    .coordinateSpace(name: "Custom")
+  }
+
+  var body: some View {
+    outerView
+  }
 }
 
 
 struct SU_GeometryReader_Previews: PreviewProvider {
-    static var previews: some View {
-        SU_GeometryReader()
-    }
+  static var previews: some View {
+    SU_GeometryReader()
+  }
 }

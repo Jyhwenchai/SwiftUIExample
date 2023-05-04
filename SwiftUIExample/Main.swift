@@ -12,7 +12,8 @@ import SwiftUI
 struct Main: App {
     var body: some Scene {
         WindowGroup {
-            SU_14_SceneStorage()
+//            SU_14_SceneStorage()
+          CustomTabView()
         }
     }
 }

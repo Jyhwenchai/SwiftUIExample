@@ -9,9 +9,13 @@
 import SwiftUI
 // 现在 Text 支持 Markdown
 struct SU_15_Text: View {
-    var body: some View {
-        Text(" **[WWDC 2021](https://developer.apple.com/wwdc21/)**")
+  var body: some View {
+    VStack {
+      Text(" **[WWDC 2021](https://developer.apple.com/wwdc21/)**")
+      Text(try! AttributedString(markdown: "_WWDC_, **WWDC**"))
+        .font(.system(size: 22, weight: .light, design: .monospaced))
     }
+  }
 }
 
 struct SU_15_Text_Previews: PreviewProvider {

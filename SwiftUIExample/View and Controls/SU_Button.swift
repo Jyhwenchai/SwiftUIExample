@@ -17,7 +17,8 @@ struct SU_Button: View {
             // `init(_:action:)`
             Button("Button", action: {
                 print("Button clicked.")
-            }).buttonStyle(BorderlessButtonStyle())
+            })
+            .buttonStyle(.borderless)
             
             // `init(action:label:)`
             Button {
@@ -29,6 +30,8 @@ struct SU_Button: View {
                     Label("Sun", systemImage: "sun.max")
                 }
             }
+
+          Button("Delete", role: .destructive) {}
         }
         
     }

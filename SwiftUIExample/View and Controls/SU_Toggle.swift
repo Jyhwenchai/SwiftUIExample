@@ -9,7 +9,24 @@
 import SwiftUI
 
 struct SU_Toggle: View {
-    @State var isOpen: Bool = false
+  @State var isOpen: Bool = false
+
+  struct Animal: Hashable {
+    let name: String
+    let image: String
+    var isFavorite: Bool = false
+  }
+
+  @State var isOn: Bool = true
+
+  let animals = [
+    Animal(name: "Dog", image: "🐶"),
+    Animal(name: "Cat", image: "🐱"),
+    Animal(name: "Panda", image: "🐼"),
+    Animal(name: "Lion", image: "🦁")
+  ]
+
+
     var body: some View {
         VStack {
             Toggle(isOn: $isOpen) {
@@ -17,10 +34,20 @@ struct SU_Toggle: View {
             }
             .fixedSize()
             .toggleStyle(.switch)
-            //        .labelsHidden()
+            .labelsHidden()
             
             Toggle("\(isOpen ? "open" : "close")", isOn: $isOpen)
                 .fixedSize()
+
+//          List {
+//            ForEach(animals, id: \.self) { animal in
+//              Toggle(
+//                animal.name,
+//                sources: animals,
+//                isOn: \.isFavorite
+//              )
+//            }
+//          }
         }
     }
 }

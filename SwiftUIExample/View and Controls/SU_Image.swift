@@ -15,7 +15,7 @@ struct SU_Image: View {
             .aspectRatio(contentMode: .fit)
             .scaleEffect(1)
             .frame(width: 200, height: 200, alignment: .center)
-            .foregroundColor(Color.white)
+            .foregroundColor(Color.orange)
             .background(Color.blue)
     }
 }

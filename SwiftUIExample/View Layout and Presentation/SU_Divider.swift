@@ -30,7 +30,7 @@ struct SU_Divider: View {
                 Text("Hello, World!")
                 Text("Hello, World!")
                 Text("Hello, World!")
-                Divider().frame(width: 0, height: 20)
+                Divider().frame(width: 0, height: 50)
                 Text("Hello, World!")
                 Text("Hello, World!")
                 Text("Hello, World!")

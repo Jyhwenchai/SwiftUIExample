@@ -22,6 +22,7 @@ struct SU_EdgesIgnoringSafeArea: View {
             }
         }
         .edgesIgnoringSafeArea(.all)// iOS 15 中废弃
+//        .ignoresSafeArea(.all, edges: .all)
     }
 }
 

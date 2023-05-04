@@ -10,14 +10,29 @@ import SwiftUI
 
 struct SU_ScrollView: View {
     var body: some View {
+      VStack {
         ScrollView(.vertical, showsIndicators: true) {
+          VStack {
             ForEach(1..<100) {
-                Text("Item \($0)")
+              Text("Item \($0)")
             }
-            .frame(width: UIScreen.main.bounds.width,
-                   height: UIScreen.main.bounds.height,
-                   alignment: .leading)
+          }
         }
+        .frame(width: 500,
+               height: 700,
+               alignment: .center)
+
+        ScrollView(.horizontal, showsIndicators: true) {
+          HStack {
+            ForEach(1..<100) {
+              Text("Item \($0)")
+            }
+          }
+        }
+        .frame(width: UIScreen.main.bounds.width,
+               height: 100,
+               alignment: .leading)
+      }
     }
 }
 

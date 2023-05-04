@@ -22,7 +22,7 @@ struct SU_Clipped: View {
                 .background(Color.orange)
         }
         .frame(width: 150, height: 150)
-        .background(Color.primary)
+        .background(Color.red)
         .clipped(antialiased: false)
     }
 }

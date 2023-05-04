@@ -20,7 +20,8 @@ struct SU_DisableAutocorrection: View {
     var body: some View {
         TextField("Enter your name", text: $value)
             .fixedSize()
-            .disableAutocorrection(true)
+//            .disableAutocorrection(true)
+            .autocorrectionDisabled(true)
     }
 }
 

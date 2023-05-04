@@ -15,14 +15,12 @@ struct SU_ScaledShape: View {
         VStack {
             Text("Hello, World!")
             VStack {
-                ScaledShape(shape: Circle(), scale: CGSize(width: 1, height: 0.5))
+              ScaledShape(shape: Circle(), scale: CGSize(width: 1, height: 0.6))
                     .fill(Color.blue)
             }.background(Color.yellow)
         }
         .frame(width: 200, height: 200)
         .background(Color.red)
-        
-        
     }
 }
 
