@@ -33,7 +33,6 @@ struct Test: View {
       Text("Bar")
     }
   }
-
 }
 
 struct Test_Previews: PreviewProvider {
