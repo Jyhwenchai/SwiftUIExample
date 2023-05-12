@@ -13,45 +13,48 @@ struct Time: View {
   @State private var contentOffset: CGFloat = 0
   @State private var indicatorWidth: CGFloat = 0
   @State private var indicatorPositon: CGFloat = 0
+  @State private var navigationPath: NavigationPath = NavigationPath()
 
   var body: some View {
-    NavigationStack {
-      TabView(selection: $currentTab) {
-        ForEach(tabs) { tab in
-          GeometryReader { proxy in
-            let size = proxy.size
-            Overview()
-              .foregroundColor(Color.white)
-              .frame(width: size.width, height: size.height)
-          }
-//          .clipped()
-//          .ignoresSafeArea()
-//          .background(Color.red)
-          .offsetX { rect in
-            if currentTab.title == tab.title {
-              contentOffset = rect.minX - (rect.width * CGFloat(index(of: tab)))
+    NavigationStack(path: $navigationPath) {
+      GeometryReader { proxy in
+        VStack {
+          VStack {
+            ZStack {
+              Rectangle()
+                .fill(Color("medium_blue"))
+              VStack {
+                Spacer()
+                TabsView()
+                  .offset(y: -8)
+              }
             }
-
-            updateTabFrame(rect.width)
           }
-          .tag(tab)
-        }
-      }
-      .tabViewStyle(.page(indexDisplayMode: .never))
-//      .ignoresSafeArea()
-//      .background(ignoresSafeAreaEdges: .all)
+          .frame(height: proxy.safeAreaInsets.top + 44)
 
-      .toolbarBackground(Color("medium_blue"), for: .navigationBar)
-      .toolbarBackground(.visible, for: .navigationBar)
-      .toolbar {
-        ToolbarItem(placement: .navigationBarLeading) {
-          Text("")
+          TabView(selection: $currentTab) {
+            ForEach(tabs) { tab in
+              GeometryReader { proxy in
+                let size = proxy.size
+                Overview(navigationPath: $navigationPath)
+                  .foregroundColor(Color.white)
+                  .frame(width: size.width, height: size.height)
+              }
+              .offsetX { rect in
+                if currentTab.title == tab.title {
+                  contentOffset = rect.minX - (rect.width * CGFloat(index(of: tab)))
+                }
+                
+                updateTabFrame(rect.width)
+              }
+              .tag(tab)
+            }
+          }
+          .tabViewStyle(.page(indexDisplayMode: .never))
+          .toolbarBackground(.hidden, for: .navigationBar)
         }
+        .ignoresSafeArea()
       }
-    }
-    .overlay(alignment: .top) {
-      TabsView()
-        .offset(y: -5)
     }
   }
 

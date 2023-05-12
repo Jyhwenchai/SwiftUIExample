@@ -9,10 +9,10 @@ import SwiftUI
 
 struct Overview: View {
   @State private var isEmpty: Bool = false
-  @State private var showCalendar: Bool = true
+  @State private var showCalendar: Bool = false
   @State private var selectedDate = Date()
-  @State private var calendarOpacity: Double = 0
   @State private var coverOpacity: Double = 0
+  @Binding var navigationPath: NavigationPath
 
   var transaction: Transaction = {
     var transaction = Transaction()
@@ -57,78 +57,31 @@ struct Overview: View {
         }
       }
       .overlay(alignment: .bottom) {
-        TimeAddButton()
+        TimeAddButton {
+          navigationPath.append("A")
+        } clockAction: {
+
+        }
+
       }
     }
     .fullScreenCover(isPresented: $showCalendar, content: {
       VStack {
-        ZStack {
-          Color.black.opacity(calendarOpacity)
-            .ignoresSafeArea()
-            .animation(.linear(duration: 0.15), value: calendarOpacity)
-            .onTapGesture {
-              calendarOpacity = 0
-              DispatchQueue.main.asyncAfter(deadline: .now() + 0.15) {
-                withTransaction(transaction) {
-                  showCalendar = false
-                }
-              }
-            }
-          VStack(spacing: 0) {
-            let startDate = Date(timeIntervalSince1970: 0)
-            let endDate = Date()
-            Text("选择日期")
-              .frame(maxWidth: .infinity, maxHeight: 25)
-              .background(Color("dark_blue"))
-              .font(.caption)
-              .foregroundColor(Color.white)
-            HStack {
-              VStack(alignment: .leading) {
-                let calendar = Calendar.current
-                let year = calendar.component(.year, from: selectedDate)
-                let dateFormatter: DateFormatter = {
-                  let format = DateFormatter()
-                  format.dateFormat = "MM-dd"
-                  return format
-                }()
-                let monthDay = dateFormatter.string(from: selectedDate)
-                let weekday = calendar.component(.weekday, from: selectedDate)
-                let weekdayString = calendar.weekdaySymbols[weekday-1]
-
-                Text("\(year)")
-                  .foregroundColor(Color.white.opacity(0.6))
-                Text(monthDay + weekdayString)
-                  .font(.largeTitle)
-                  .foregroundColor(Color.white.opacity(0.8))
-              }
-              Spacer()
-            }
-            .padding(.horizontal, 10)
-            .padding(.vertical, 16)
-            .background(Color("medium_blue"))
-            DatePicker("date", selection: $selectedDate, in: startDate...endDate, displayedComponents: [.date])
-              .datePickerStyle(.graphical)
-              .background(Color.white)
-              .tint(Color("medium_blue"))
-          }
-          .background(Color.white)
-          .cornerRadius(10)
-          .padding(.horizontal, 35)
-        }
+        OverviewCalendar(selectedDate: $selectedDate, isShow: $showCalendar)
       }
       .frame(maxWidth: .infinity, maxHeight: .infinity)
       .background(TransparentBackground())
-//      .animation(.easeIn(duration: 0.15), value: coverOpacity)
-      .onAppear {
-        calendarOpacity = 0.5
-      }
     })
+    .navigationDestination(for: String.self) { path in
+      Text("\(path.description)")
+        .toolbar(.hidden, for: .tabBar)
+    }
   }
 }
 
 struct Overview_Previews: PreviewProvider {
   static var previews: some View {
-    Overview()
+    Overview(navigationPath: .constant(NavigationPath()))
   }
 }
 

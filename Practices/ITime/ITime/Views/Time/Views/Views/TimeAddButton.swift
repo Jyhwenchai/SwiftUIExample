@@ -8,18 +8,18 @@
 import SwiftUI
 
 struct TimeAddButton: View {
+  let addAction: () -> Void
+  let clockAction: () -> Void
   var body: some View {
     HStack {
-      Button {
-      } label: {
+      Button { addAction() } label: {
         Image(systemName: "plus")
           .resizable()
           .frame(width: 18, height: 18)
       }
       Spacer()
         .frame(width: 35)
-      Button {
-      } label: {
+      Button { clockAction() } label: {
         Image(systemName: "clock")
           .resizable()
           .frame(width: 20, height: 20)
@@ -39,6 +39,11 @@ struct TimeAddButton: View {
 
 struct TimeAddButton_Previews: PreviewProvider {
     static var previews: some View {
-        TimeAddButton()
+      TimeAddButton {
+
+      } clockAction: {
+        
+      }
+
     }
 }

@@ -58,9 +58,9 @@ enum Tab: Int, Hashable, RawRepresentable {
   typealias TabIcon = (normal: String, selected: String)
   var tabIcon: TabIcon {
     switch self {
-    case .time: return ("ic_24_hour_nor", "ic_24_hour_sel")
-    case .target: return ("ic_24_hour_nor", "ic_24_hour_sel")
-    case .mine: return ("ic_nav_user_nor", "ic_nav_user_sel")
+    case .time: return ("ic_24_hour_nor25x25", "ic_24_hour_sel25x25")
+    case .target: return ("ic_nav_target_nor25x25", "ic_nav_target_sel25x25")
+    case .mine: return ("ic_nav_user_nor25x25", "ic_nav_user_sel25x25")
     }
   }
   var tabName: String {

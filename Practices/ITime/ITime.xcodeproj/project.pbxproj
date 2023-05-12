@@ -21,6 +21,7 @@
 		66041E702A0B371A0032F59F /* CommonEmptyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66041E6F2A0B371A0032F59F /* CommonEmptyView.swift */; };
 		66041E732A0B7A850032F59F /* OverviewList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66041E722A0B7A850032F59F /* OverviewList.swift */; };
 		66041E752A0B7B770032F59F /* TimeAddButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66041E742A0B7B770032F59F /* TimeAddButton.swift */; };
+		66041E792A0DD3950032F59F /* OverviewCalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66041E782A0DD3950032F59F /* OverviewCalendar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,7 @@
 		66041E6F2A0B371A0032F59F /* CommonEmptyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonEmptyView.swift; sourceTree = "<group>"; };
 		66041E722A0B7A850032F59F /* OverviewList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverviewList.swift; sourceTree = "<group>"; };
 		66041E742A0B7B770032F59F /* TimeAddButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeAddButton.swift; sourceTree = "<group>"; };
+		66041E782A0DD3950032F59F /* OverviewCalendar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverviewCalendar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,6 +159,7 @@
 			children = (
 				66041E722A0B7A850032F59F /* OverviewList.swift */,
 				66041E742A0B7B770032F59F /* TimeAddButton.swift */,
+				66041E782A0DD3950032F59F /* OverviewCalendar.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -242,6 +245,7 @@
 				66041E202A0A29800032F59F /* TimeData.swift in Sources */,
 				66041E232A0A2CDB0032F59F /* ScrollOffset.swift in Sources */,
 				66041E052A09E2410032F59F /* ITimeApp.swift in Sources */,
+				66041E792A0DD3950032F59F /* OverviewCalendar.swift in Sources */,
 				66041E252A0A33D80032F59F /* LinearInterpolation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
