@@ -28,3 +28,11 @@ struct OffsetKey: PreferenceKey {
     value = nextValue()
   }
 }
+
+struct TabItemWidthPreferenceKey: PreferenceKey {
+    static var defaultValue: CGFloat = 0
+
+    static func reduce(value: inout CGFloat, nextValue: () -> CGFloat) {
+        value = nextValue()
+    }
+}
