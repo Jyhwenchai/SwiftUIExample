@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import SwiftUI
 
 enum ChartData: Identifiable {
   case bar
@@ -15,9 +16,11 @@ enum ChartData: Identifiable {
 
 struct Pancakes: Identifiable {
   let name: String
-  let sales: Int
+  let sales: Double
 
   var id: String { name }
+
+  let color = Color.random
 }
 
 

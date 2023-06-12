@@ -11,7 +11,8 @@ import SwiftUI
 struct ITimeApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+//            ContentView()
+          SectorChart()
         }
     }
 }
