@@ -1,14 +1,13 @@
 //
 //  ContentView.swift
-//  ScrollView
+//  List
 //
-//  Created by 蔡志文 on 6/13/23.
+//  Created by 蔡志文 on 6/14/23.
 //
 
 import SwiftUI
 
 struct ContentView: View {
-
   var body: some View {
     NavigationStack {
       List {
@@ -22,11 +21,11 @@ struct ContentView: View {
           }
         }
       }
-      .navigationTitle("ScrollView")
+      .navigationTitle("List")
     }
   }
 }
 
 #Preview {
-  ContentView()
+    ContentView()
 }

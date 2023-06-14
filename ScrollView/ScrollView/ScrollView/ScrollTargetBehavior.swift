@@ -13,6 +13,7 @@ import SwiftUI
 /// 值 `viewAligned(limitBehavior:)` 定义了滚动的对齐行为
 /// - 值 `always` 效果与 `viewAligned` 相同
 /// - 值 `never` 则表现出 `ScrollView` 默认的行为（即无滚动效果）
+/// 我们也可以通过实现 `ScrollTargetBehavior` 协议自定义实现滚动的行为
 struct ScrollTargetBehavior_: View {
   private struct Item: Identifiable {
     var id: String { text }
@@ -50,8 +51,6 @@ struct ScrollTargetBehavior_: View {
 
 struct BasicScrollTargetBehavior: ScrollTargetBehavior {
   func updateTarget(_ target: inout ScrollTarget, context: TargetContext) {
-//    print(target.rect)
-//    print(context.containerSize, context.contentSize, context.velocity)
-    target.rect.origin.x = target.rect.origin.x * (context.velocity.dx + 1)
+    target.rect.origin.x = target.rect.origin.x + context.velocity.dx * context.containerSize.width
   }
 }

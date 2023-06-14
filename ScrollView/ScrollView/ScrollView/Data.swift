@@ -12,7 +12,7 @@ struct Item: Identifiable {
   var text: String
 }
 
-let list: [(String, [Feature])] = [
+let data: [(String, [Feature])] = [
   ("Properties",
    [
     .init("Axis", ScrollAxis())
