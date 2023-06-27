@@ -18,7 +18,6 @@ import SwiftUI
 
  */
 
-#warning("TODO: 更多方法待补充")
 struct SU_GestureMask: View {
     var body: some View {
         VStack {

@@ -24,6 +24,7 @@ struct SU_DragGesture: View {
                 newPosition.width += offset.width
                 newPosition.height += offset.height
                 offset = .zero
+              print("enddddd")
             }
     }
     
