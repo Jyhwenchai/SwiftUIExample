@@ -8,20 +8,28 @@
 import SwiftUI
 
 struct ContentView: View {
-  var body: some View {
-    Button("Create a Scene") {
-      let userActivity = NSUserActivity(
-        activityType: "me.michaelfcollins3.MultipleSceneApp.SceneTwo"
-      )
-      userActivity.targetContentIdentifier =
-      "me.michaelfcollins3.MultipleSceneApp.SceneTwo"
+  @Environment(\.openWindow) private var openWindow
 
-      UIApplication.shared.requestSceneSessionActivation(
-        nil,
-        userActivity: userActivity,
-        options: nil,
-        errorHandler: nil
-      )
+  var body: some View {
+    VStack {
+      Button("Create Second Scene") {
+        let userActivity = NSUserActivity(
+          activityType: "me.michaelfcollins3.MultipleSceneApp.SceneTwo"
+        )
+        userActivity.targetContentIdentifier =
+        "me.michaelfcollins3.MultipleSceneApp.SceneTwo"
+        
+        UIApplication.shared.requestSceneSessionActivation(
+          nil,
+          userActivity: userActivity,
+          options: nil,
+          errorHandler: nil
+        )
+      }
+
+      Button("Open Third Scene") {
+        openWindow(id: "scene-three")
+      }
     }
   }
 }
