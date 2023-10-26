@@ -11,11 +11,11 @@ struct AlignmentGuide: View {
   var body: some View {
     VStack {
 
-      HStack(alignment: VerticalAlignment.top) {
-        Rectangle().fill(Color.orange).frame(width: 100, height: 60)
+      HStack(alignment: VerticalAlignment.center) {
+        Rectangle().fill(Color.red).frame(width: 100, height: 60)
           .alignmentGuide(VerticalAlignment.top) { d in d[VerticalAlignment.bottom]}
         Rectangle().fill(Color.orange).frame(width: 110, height: 100)
-          .alignmentGuide(VerticalAlignment.top) { d in d[VerticalAlignment.center] }
+//          .alignmentGuide(VerticalAlignment.top) { d in d[VerticalAlignment.center] }
         Rectangle().fill(Color.orange).frame(width: 80, height: 70)
           .alignmentGuide(VerticalAlignment.top) { d in d[VerticalAlignment.top] }
       }.background(Color.blue)
