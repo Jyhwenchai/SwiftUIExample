@@ -24,52 +24,6 @@ struct PianoReadingView: View {
   }
 }
 
-struct KeyBoardBarModel: Identifiable {
-  var id = UUID()
-  let name: String
-  var barType: BarType
-
-  enum BarType: Int {
-    case black
-    case white
-  }
-
-  var color: Color {
-    switch barType {
-    case .black: Color.black
-    case .white: Color.white
-    }
-  }
-}
-
-enum BarClip {
-  case none
-  case left
-  case right
-
-  var showNotes: [Note] {
-    switch self {
-    case .none: Note.allCases
-    case .left: [.A, .ASharp, .B]
-    case .right: [.C]
-    }
-  }
-}
-
-enum Note: String, CaseIterable {
-  case C
-  case D
-  case E
-  case F
-  case G
-  case A
-  case B
-  case CSharp = "C#"
-  case DSharp = "D#"
-  case FSharp = "F#"
-  case GSharp = "G#"
-  case ASharp = "A#"
-}
 
 private let totalBarItem: [KeyBoardBarModel] = [
   KeyBoardBarModel(name: "C", barType: .white),

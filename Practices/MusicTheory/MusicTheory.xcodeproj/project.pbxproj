@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		661485A92AF22A2D00249901 /* PianoData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 661485A82AF22A2D00249901 /* PianoData.swift */; };
+		663C1E422AF3770B00E77855 /* ScripText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 663C1E412AF3770B00E77855 /* ScripText.swift */; };
+		663C1E442AF38A7900E77855 /* WholeAndHalfToneExercises.swift in Sources */ = {isa = PBXBuildFile; fileRef = 663C1E432AF38A7900E77855 /* WholeAndHalfToneExercises.swift */; };
+		663C1E462AF3974D00E77855 /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 663C1E452AF3974D00E77855 /* Test.swift */; };
 		66EA9C082AE22A53002540E5 /* MusicTheoryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66EA9C072AE22A53002540E5 /* MusicTheoryApp.swift */; };
 		66EA9C0A2AE22A53002540E5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66EA9C092AE22A53002540E5 /* ContentView.swift */; };
 		66EA9C0C2AE22A55002540E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66EA9C0B2AE22A55002540E5 /* Assets.xcassets */; };
@@ -14,11 +18,15 @@
 		66EA9C182AE22AFC002540E5 /* RollCallPractiseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66EA9C172AE22AFC002540E5 /* RollCallPractiseView.swift */; };
 		66EA9C1A2AE24DDD002540E5 /* PianoReadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66EA9C192AE24DDD002540E5 /* PianoReadingView.swift */; };
 		66EA9C1D2AE5FD5B002540E5 /* Border.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66EA9C1C2AE5FD5B002540E5 /* Border.swift */; };
-		66EA9C1F2AE61BF1002540E5 /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66EA9C1E2AE61BF1002540E5 /* Test.swift */; };
+		66EA9C1F2AE61BF1002540E5 /* PianoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66EA9C1E2AE61BF1002540E5 /* PianoView.swift */; };
 		66EA9C222AE648D5002540E5 /* GlobalData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66EA9C212AE648D5002540E5 /* GlobalData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		661485A82AF22A2D00249901 /* PianoData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PianoData.swift; sourceTree = "<group>"; };
+		663C1E412AF3770B00E77855 /* ScripText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScripText.swift; sourceTree = "<group>"; };
+		663C1E432AF38A7900E77855 /* WholeAndHalfToneExercises.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WholeAndHalfToneExercises.swift; sourceTree = "<group>"; };
+		663C1E452AF3974D00E77855 /* Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
 		66EA9C042AE22A53002540E5 /* MusicTheory.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MusicTheory.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		66EA9C072AE22A53002540E5 /* MusicTheoryApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicTheoryApp.swift; sourceTree = "<group>"; };
 		66EA9C092AE22A53002540E5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -28,7 +36,7 @@
 		66EA9C172AE22AFC002540E5 /* RollCallPractiseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RollCallPractiseView.swift; sourceTree = "<group>"; };
 		66EA9C192AE24DDD002540E5 /* PianoReadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PianoReadingView.swift; sourceTree = "<group>"; };
 		66EA9C1C2AE5FD5B002540E5 /* Border.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Border.swift; sourceTree = "<group>"; };
-		66EA9C1E2AE61BF1002540E5 /* Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
+		66EA9C1E2AE61BF1002540E5 /* PianoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PianoView.swift; sourceTree = "<group>"; };
 		66EA9C212AE648D5002540E5 /* GlobalData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -64,6 +72,7 @@
 			children = (
 				66EA9C072AE22A53002540E5 /* MusicTheoryApp.swift */,
 				66EA9C092AE22A53002540E5 /* ContentView.swift */,
+				663C1E452AF3974D00E77855 /* Test.swift */,
 				66EA9C202AE648B9002540E5 /* Model */,
 				66EA9C1B2AE5FD4E002540E5 /* Help */,
 				66EA9C162AE22A7E002540E5 /* Views */,
@@ -85,9 +94,11 @@
 		66EA9C162AE22A7E002540E5 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				663C1E412AF3770B00E77855 /* ScripText.swift */,
 				66EA9C172AE22AFC002540E5 /* RollCallPractiseView.swift */,
 				66EA9C192AE24DDD002540E5 /* PianoReadingView.swift */,
-				66EA9C1E2AE61BF1002540E5 /* Test.swift */,
+				66EA9C1E2AE61BF1002540E5 /* PianoView.swift */,
+				663C1E432AF38A7900E77855 /* WholeAndHalfToneExercises.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -104,6 +115,7 @@
 			isa = PBXGroup;
 			children = (
 				66EA9C212AE648D5002540E5 /* GlobalData.swift */,
+				661485A82AF22A2D00249901 /* PianoData.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -178,13 +190,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				663C1E422AF3770B00E77855 /* ScripText.swift in Sources */,
 				66EA9C0A2AE22A53002540E5 /* ContentView.swift in Sources */,
 				66EA9C1D2AE5FD5B002540E5 /* Border.swift in Sources */,
 				66EA9C1A2AE24DDD002540E5 /* PianoReadingView.swift in Sources */,
 				66EA9C082AE22A53002540E5 /* MusicTheoryApp.swift in Sources */,
+				663C1E462AF3974D00E77855 /* Test.swift in Sources */,
 				66EA9C222AE648D5002540E5 /* GlobalData.swift in Sources */,
+				663C1E442AF38A7900E77855 /* WholeAndHalfToneExercises.swift in Sources */,
+				661485A92AF22A2D00249901 /* PianoData.swift in Sources */,
 				66EA9C182AE22AFC002540E5 /* RollCallPractiseView.swift in Sources */,
-				66EA9C1F2AE61BF1002540E5 /* Test.swift in Sources */,
+				66EA9C1F2AE61BF1002540E5 /* PianoView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -19,5 +19,7 @@ struct MusicTheory: Identifiable {
 
 let musicTheoryList: [MusicTheory] = [
   .init(title: "Note name practice", view: RollCallPractiseView()),
-  .init(title: "Piano Note Reading", view: PianoReadingView()),
+  .init(title: "Piano Keybard", view: PianoView()),
 ]
+
+// note/ # b 
