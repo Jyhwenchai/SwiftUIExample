@@ -17,6 +17,7 @@ struct Test: View {
         Text("高半音：\(randomNote.highSemitone.description)")
       }
       .font(.system(size: 40))
+
       Text(randomNote.description)
         .font(.system(size: 60))
       Button {
@@ -24,6 +25,13 @@ struct Test: View {
       } label: {
         Text("random")
       }
+
+      HStack {
+        Text("低全音：\(randomNote.lowWholeSemitone.description)")
+        Spacer()
+        Text("高半音：\(randomNote.highWholeSemitone.description)")
+      }
+      .font(.system(size: 40))
     }
   }
 }

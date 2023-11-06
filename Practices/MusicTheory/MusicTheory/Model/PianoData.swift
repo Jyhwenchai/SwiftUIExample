@@ -132,7 +132,7 @@ enum NoteScrip: String, CaseIterable {
   func increase() -> NoteScrip {
     switch self {
     case .sup2: .sup1
-    case .sup1: .sup9
+    case .sup1: .sup0
     case .sup0: .sub0
     case .sub0: .sub1
     case .sub1: .sub2
@@ -220,8 +220,6 @@ extension BaseNote {
 }
 
 extension NoteCharacter {
-
-
   var lowSemitone: NoteCharacter {
     var noteCharacter = self
     switch note {
@@ -293,6 +291,58 @@ extension NoteCharacter {
           noteCharacter.scrip = noteCharacter.scrip.increase()
         }
 
+      }
+    }
+    return noteCharacter
+  }
+
+  var lowWholeSemitone: NoteCharacter {
+    var noteCharacter = self
+    switch note {
+    case .D, .E, .G, .A, .B:
+      noteCharacter.note = noteCharacter.note.leftNote
+    case .C, .F:
+      if let sign = noteCharacter.sign {
+        switch sign {
+        case .flat:
+          noteCharacter.note = noteCharacter.note.leftNote.leftNote
+        case .sharp:
+          noteCharacter.note = noteCharacter.note.leftNote
+        default: break
+        }
+        if note == .C {
+          noteCharacter.scrip = noteCharacter.scrip.reduce()
+        }
+        noteCharacter.sign = .none
+      } else {
+        noteCharacter.sign = .flat
+        noteCharacter.scrip = noteCharacter.scrip.reduce()
+      }
+    }
+    return noteCharacter
+  }
+
+  var highWholeSemitone: NoteCharacter {
+    var noteCharacter = self
+    switch note {
+    case .C, .D, .F, .G, .A:
+      noteCharacter.note = noteCharacter.note.rightNote
+    case .E, .B:
+      if let sign = noteCharacter.sign {
+        switch sign {
+        case .sharp:
+          noteCharacter.note = noteCharacter.note.rightNote.rightNote
+        case .flat:
+          noteCharacter.note = noteCharacter.note.rightNote
+        default: break
+        }
+        if note == .B {
+          noteCharacter.scrip = noteCharacter.scrip.increase()
+        }
+        noteCharacter.sign = .none
+      } else {
+        noteCharacter.note = noteCharacter.note.rightNote
+        noteCharacter.sign = .sharp
       }
     }
     return noteCharacter
