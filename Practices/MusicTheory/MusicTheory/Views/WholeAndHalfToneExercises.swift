@@ -8,8 +8,31 @@
 import SwiftUI
 
 struct WholeAndHalfToneExercises: View {
+  @State var randomNote = randomNoteCharacter()
   var body: some View {
-    Text("A\u{2070}")
+    VStack {
+      HStack {
+        Text("低半音：\(randomNote.lowSemitone.description)")
+        Spacer()
+        Text("高半音：\(randomNote.highSemitone.description)")
+      }
+      .font(.system(size: 40))
+
+      Text(randomNote.description)
+        .font(.system(size: 60))
+      Button {
+        randomNote = randomNoteCharacter()
+      } label: {
+        Text("random")
+      }
+
+      HStack {
+        Text("低全音：\(randomNote.lowWholeSemitone.description)")
+        Spacer()
+        Text("高全音：\(randomNote.highWholeSemitone.description)")
+      }
+      .font(.system(size: 40))
+    }
   }
 }
 
