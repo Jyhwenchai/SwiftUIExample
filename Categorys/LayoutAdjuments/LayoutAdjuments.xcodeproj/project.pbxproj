@@ -26,6 +26,7 @@
 		667E3E392A413C9C009228A6 /* SafeAreaInset_.swift in Sources */ = {isa = PBXBuildFile; fileRef = 667E3E382A413C9C009228A6 /* SafeAreaInset_.swift */; };
 		667E3E3B2A413DDF009228A6 /* SafeAreaPadding_.swift in Sources */ = {isa = PBXBuildFile; fileRef = 667E3E3A2A413DDF009228A6 /* SafeAreaPadding_.swift */; };
 		667E3E3D2A41427E009228A6 /* LayoutDirectionBehavior_.swift in Sources */ = {isa = PBXBuildFile; fileRef = 667E3E3C2A41427E009228A6 /* LayoutDirectionBehavior_.swift */; };
+		66B81B502B47819600A50D53 /* AlignmentGuideDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66B81B4F2B47819600A50D53 /* AlignmentGuideDemo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +50,7 @@
 		667E3E382A413C9C009228A6 /* SafeAreaInset_.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafeAreaInset_.swift; sourceTree = "<group>"; };
 		667E3E3A2A413DDF009228A6 /* SafeAreaPadding_.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafeAreaPadding_.swift; sourceTree = "<group>"; };
 		667E3E3C2A41427E009228A6 /* LayoutDirectionBehavior_.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutDirectionBehavior_.swift; sourceTree = "<group>"; };
+		66B81B4F2B47819600A50D53 /* AlignmentGuideDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlignmentGuideDemo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +94,7 @@
 				667E3E2E2A404A58009228A6 /* Position.swift */,
 				667E3E302A404A5E009228A6 /* Offset.swift */,
 				667E3E322A405185009228A6 /* AlignmentGuide.swift */,
+				66B81B4E2B47817000A50D53 /* AlignmentGuide */,
 				667E3E342A40553A009228A6 /* ContentMargins.swift */,
 				667E3E362A4133F1009228A6 /* IgnoresSafeArea.swift */,
 				667E3E382A413C9C009228A6 /* SafeAreaInset_.swift */,
@@ -110,6 +113,14 @@
 				666620252A3C41F600C297EB /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		66B81B4E2B47817000A50D53 /* AlignmentGuide */ = {
+			isa = PBXGroup;
+			children = (
+				66B81B4F2B47819600A50D53 /* AlignmentGuideDemo.swift */,
+			);
+			path = AlignmentGuide;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -183,6 +194,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				667E3E332A405185009228A6 /* AlignmentGuide.swift in Sources */,
+				66B81B502B47819600A50D53 /* AlignmentGuideDemo.swift in Sources */,
 				667E3E272A4031E0009228A6 /* ScenePadding.swift in Sources */,
 				666620212A3C41F400C297EB /* ContentView.swift in Sources */,
 				662D12892A402A19007B3476 /* Padding.swift in Sources */,

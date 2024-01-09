@@ -21,7 +21,7 @@ struct UIApplicationDelegateAdaptorApp: App {
 class MyAppDelegate: NSObject, UIApplicationDelegate, ObservableObject {
   @Published var date: Date = .now
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
-    print("app did finish launching.")
+    print(#function)
     Timer.publish(every: 1, on: .main, in: .default)
       .autoconnect()
       .assign(to: &$date)
@@ -33,12 +33,14 @@ class MyAppDelegate: NSObject, UIApplicationDelegate, ObservableObject {
 class MySceneDelegate: NSObject, UIWindowSceneDelegate, ObservableObject {
   @Published var date: Date = .now
   func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
+    print(#function)
     Timer.publish(every: 1, on: .main, in: .default)
       .autoconnect()
       .assign(to: &$date)
   }
 
   func windowScene(_ windowScene: UIWindowScene, performActionFor shortcutItem: UIApplicationShortcutItem, completionHandler: @escaping (Bool) -> Void) {
+    print(#function)
     completionHandler(true)
   }
 }
@@ -49,9 +51,7 @@ extension MyAppDelegate {
     configurationForConnecting connectingSceneSession: UISceneSession,
     options: UIScene.ConnectionOptions
   ) -> UISceneConfiguration {
-
-    print("configure window scene.")
-
+    print(#function)
     let configuration = UISceneConfiguration(
       name: nil,
       sessionRole: connectingSceneSession.role)
