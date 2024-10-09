@@ -1,0 +1,587 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 60;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		66525BF12C257BC900B29EB9 /* WedgitSampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66525BF02C257BC900B29EB9 /* WedgitSampleApp.swift */; };
+		66525BF32C257BC900B29EB9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66525BF22C257BC900B29EB9 /* ContentView.swift */; };
+		66525BF52C257BCB00B29EB9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66525BF42C257BCB00B29EB9 /* Assets.xcassets */; };
+		66525BF92C257BCB00B29EB9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66525BF82C257BCB00B29EB9 /* Preview Assets.xcassets */; };
+		66525C062C257C1600B29EB9 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66525C052C257C1600B29EB9 /* WidgetKit.framework */; };
+		66525C082C257C1600B29EB9 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66525C072C257C1600B29EB9 /* SwiftUI.framework */; };
+		66525C0B2C257C1600B29EB9 /* DateWidgetLiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66525C0A2C257C1600B29EB9 /* DateWidgetLiveActivity.swift */; };
+		66525C0D2C257C1600B29EB9 /* DateWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66525C0C2C257C1600B29EB9 /* DateWidgetBundle.swift */; };
+		66525C0F2C257C1600B29EB9 /* DateWidgetControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66525C0E2C257C1600B29EB9 /* DateWidgetControl.swift */; };
+		66525C112C257C1600B29EB9 /* DateWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66525C102C257C1600B29EB9 /* DateWidget.swift */; };
+		66525C132C257C1600B29EB9 /* AppIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66525C122C257C1600B29EB9 /* AppIntent.swift */; };
+		66525C152C257C1800B29EB9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66525C142C257C1800B29EB9 /* Assets.xcassets */; };
+		66525C192C257C1800B29EB9 /* DateWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 66525C032C257C1600B29EB9 /* DateWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		66657C112C2A9F9400D1605B /* StaticWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66657C102C2A9F9400D1605B /* StaticWidget.swift */; };
+		66657C122C2A9F9400D1605B /* StaticWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66657C102C2A9F9400D1605B /* StaticWidget.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		66525C172C257C1800B29EB9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 66525BE52C257BC900B29EB9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 66525C022C257C1600B29EB9;
+			remoteInfo = DateWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		66525C1D2C257C1800B29EB9 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				66525C192C257C1800B29EB9 /* DateWidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		66525BED2C257BC900B29EB9 /* WedgitSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WedgitSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		66525BF02C257BC900B29EB9 /* WedgitSampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WedgitSampleApp.swift; sourceTree = "<group>"; };
+		66525BF22C257BC900B29EB9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		66525BF42C257BCB00B29EB9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		66525BF62C257BCB00B29EB9 /* WedgitSample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WedgitSample.entitlements; sourceTree = "<group>"; };
+		66525BF82C257BCB00B29EB9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		66525C032C257C1600B29EB9 /* DateWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = DateWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		66525C052C257C1600B29EB9 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		66525C072C257C1600B29EB9 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		66525C0A2C257C1600B29EB9 /* DateWidgetLiveActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateWidgetLiveActivity.swift; sourceTree = "<group>"; };
+		66525C0C2C257C1600B29EB9 /* DateWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateWidgetBundle.swift; sourceTree = "<group>"; };
+		66525C0E2C257C1600B29EB9 /* DateWidgetControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateWidgetControl.swift; sourceTree = "<group>"; };
+		66525C102C257C1600B29EB9 /* DateWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateWidget.swift; sourceTree = "<group>"; };
+		66525C122C257C1600B29EB9 /* AppIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppIntent.swift; sourceTree = "<group>"; };
+		66525C142C257C1800B29EB9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		66525C162C257C1800B29EB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		66657C102C2A9F9400D1605B /* StaticWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaticWidget.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		66525BEA2C257BC900B29EB9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		66525C002C257C1600B29EB9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66525C082C257C1600B29EB9 /* SwiftUI.framework in Frameworks */,
+				66525C062C257C1600B29EB9 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		66525BE42C257BC900B29EB9 = {
+			isa = PBXGroup;
+			children = (
+				66525BEF2C257BC900B29EB9 /* WedgitSample */,
+				66525C092C257C1600B29EB9 /* DateWidget */,
+				66525C042C257C1600B29EB9 /* Frameworks */,
+				66525BEE2C257BC900B29EB9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		66525BEE2C257BC900B29EB9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				66525BED2C257BC900B29EB9 /* WedgitSample.app */,
+				66525C032C257C1600B29EB9 /* DateWidgetExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		66525BEF2C257BC900B29EB9 /* WedgitSample */ = {
+			isa = PBXGroup;
+			children = (
+				66525BF02C257BC900B29EB9 /* WedgitSampleApp.swift */,
+				66525BF22C257BC900B29EB9 /* ContentView.swift */,
+				66525BF42C257BCB00B29EB9 /* Assets.xcassets */,
+				66525BF62C257BCB00B29EB9 /* WedgitSample.entitlements */,
+				66525BF72C257BCB00B29EB9 /* Preview Content */,
+			);
+			path = WedgitSample;
+			sourceTree = "<group>";
+		};
+		66525BF72C257BCB00B29EB9 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				66525BF82C257BCB00B29EB9 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		66525C042C257C1600B29EB9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				66525C052C257C1600B29EB9 /* WidgetKit.framework */,
+				66525C072C257C1600B29EB9 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		66525C092C257C1600B29EB9 /* DateWidget */ = {
+			isa = PBXGroup;
+			children = (
+				66525C0A2C257C1600B29EB9 /* DateWidgetLiveActivity.swift */,
+				66525C0C2C257C1600B29EB9 /* DateWidgetBundle.swift */,
+				66525C0E2C257C1600B29EB9 /* DateWidgetControl.swift */,
+				66525C102C257C1600B29EB9 /* DateWidget.swift */,
+				66657C102C2A9F9400D1605B /* StaticWidget.swift */,
+				66525C122C257C1600B29EB9 /* AppIntent.swift */,
+				66525C142C257C1800B29EB9 /* Assets.xcassets */,
+				66525C162C257C1800B29EB9 /* Info.plist */,
+			);
+			path = DateWidget;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		66525BEC2C257BC900B29EB9 /* WedgitSample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 66525BFC2C257BCB00B29EB9 /* Build configuration list for PBXNativeTarget "WedgitSample" */;
+			buildPhases = (
+				66525BE92C257BC900B29EB9 /* Sources */,
+				66525BEA2C257BC900B29EB9 /* Frameworks */,
+				66525BEB2C257BC900B29EB9 /* Resources */,
+				66525C1D2C257C1800B29EB9 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				66525C182C257C1800B29EB9 /* PBXTargetDependency */,
+			);
+			name = WedgitSample;
+			productName = WedgitSample;
+			productReference = 66525BED2C257BC900B29EB9 /* WedgitSample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		66525C022C257C1600B29EB9 /* DateWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 66525C1A2C257C1800B29EB9 /* Build configuration list for PBXNativeTarget "DateWidgetExtension" */;
+			buildPhases = (
+				66525BFF2C257C1600B29EB9 /* Sources */,
+				66525C002C257C1600B29EB9 /* Frameworks */,
+				66525C012C257C1600B29EB9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DateWidgetExtension;
+			productName = DateWidgetExtension;
+			productReference = 66525C032C257C1600B29EB9 /* DateWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		66525BE52C257BC900B29EB9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1600;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					66525BEC2C257BC900B29EB9 = {
+						CreatedOnToolsVersion = 16.0;
+					};
+					66525C022C257C1600B29EB9 = {
+						CreatedOnToolsVersion = 16.0;
+					};
+				};
+			};
+			buildConfigurationList = 66525BE82C257BC900B29EB9 /* Build configuration list for PBXProject "WedgitSample" */;
+			compatibilityVersion = "Xcode 15.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 66525BE42C257BC900B29EB9;
+			productRefGroup = 66525BEE2C257BC900B29EB9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				66525BEC2C257BC900B29EB9 /* WedgitSample */,
+				66525C022C257C1600B29EB9 /* DateWidgetExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		66525BEB2C257BC900B29EB9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66525BF92C257BCB00B29EB9 /* Preview Assets.xcassets in Resources */,
+				66525BF52C257BCB00B29EB9 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		66525C012C257C1600B29EB9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66525C152C257C1800B29EB9 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		66525BE92C257BC900B29EB9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66657C122C2A9F9400D1605B /* StaticWidget.swift in Sources */,
+				66525BF32C257BC900B29EB9 /* ContentView.swift in Sources */,
+				66525BF12C257BC900B29EB9 /* WedgitSampleApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		66525BFF2C257C1600B29EB9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66525C0B2C257C1600B29EB9 /* DateWidgetLiveActivity.swift in Sources */,
+				66525C112C257C1600B29EB9 /* DateWidget.swift in Sources */,
+				66525C132C257C1600B29EB9 /* AppIntent.swift in Sources */,
+				66657C112C2A9F9400D1605B /* StaticWidget.swift in Sources */,
+				66525C0F2C257C1600B29EB9 /* DateWidgetControl.swift in Sources */,
+				66525C0D2C257C1600B29EB9 /* DateWidgetBundle.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		66525C182C257C1800B29EB9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 66525C022C257C1600B29EB9 /* DateWidgetExtension */;
+			targetProxy = 66525C172C257C1800B29EB9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		66525BFA2C257BCB00B29EB9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		66525BFB2C257BCB00B29EB9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		66525BFD2C257BCB00B29EB9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = WedgitSample/WedgitSample.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"WedgitSample/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = Y7HFUU38YK;
+				"DEVELOPMENT_TEAM[sdk=macosx*]" = Y7HFUU38YK;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ilosic.test;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = test_dev;
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				XROS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		66525BFE2C257BCB00B29EB9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = WedgitSample/WedgitSample.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"WedgitSample/Preview Content\"";
+				DEVELOPMENT_TEAM = DTH85SS4GJ;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.czw.pro.WedgitSample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				XROS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		66525C1B2C257C1800B29EB9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = Y7HFUU38YK;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DateWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = DateWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ilosic.test.SampleWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = ilosc_test_widget;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		66525C1C2C257C1800B29EB9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DTH85SS4GJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DateWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = DateWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.czw.pro.WedgitSample.DateWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		66525BE82C257BC900B29EB9 /* Build configuration list for PBXProject "WedgitSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				66525BFA2C257BCB00B29EB9 /* Debug */,
+				66525BFB2C257BCB00B29EB9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		66525BFC2C257BCB00B29EB9 /* Build configuration list for PBXNativeTarget "WedgitSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				66525BFD2C257BCB00B29EB9 /* Debug */,
+				66525BFE2C257BCB00B29EB9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		66525C1A2C257C1800B29EB9 /* Build configuration list for PBXNativeTarget "DateWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				66525C1B2C257C1800B29EB9 /* Debug */,
+				66525C1C2C257C1800B29EB9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 66525BE52C257BC900B29EB9 /* Project object */;
+}
