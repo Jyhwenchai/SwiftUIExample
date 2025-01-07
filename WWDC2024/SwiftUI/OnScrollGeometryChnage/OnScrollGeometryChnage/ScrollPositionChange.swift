@@ -20,7 +20,8 @@ struct ScrollPositionChange: View {
     VStack {
       Button("Move") {
         withAnimation {
-          position.scrollTo(y: 550)
+//          position.scrollTo(y: 550)
+          position.scrollTo(id: Color.cyan)
         }
       }
       VStack {

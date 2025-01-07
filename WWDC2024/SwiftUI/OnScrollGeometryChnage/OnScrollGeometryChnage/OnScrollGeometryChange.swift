@@ -29,13 +29,12 @@ struct OnScrollGeometryChange: View {
         }
         .padding(15)
       }
+      .onScrollGeometryChange(for: CGFloat.self) { proxy in
+        return proxy.contentOffset.y
+      } action: { oldValue, newValue in
+        offset = newValue
+      }
     }
-    .onScrollGeometryChange(for: CGFloat.self) { proxy in
-      return proxy.contentOffset.y
-    } action: { oldValue, newValue in
-      offset = newValue
-    }
-
   }
 }
 
