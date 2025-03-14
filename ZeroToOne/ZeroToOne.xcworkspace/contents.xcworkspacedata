@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:ShapeSample/ShapeSample.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:MenuAndCommandSample/MenuAndCommandSample.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:IndicatorValueSample/IndicatorValueSample.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:PickersSample/PickersSample.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:ControlsSample/ControlsSample.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:LinkSample/LinkSample.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:ButtonsSample/ButtonsSample.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:AsyncImageSample/AsyncImageSample.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:ImageSample/ImageSample.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:TextEditorSample/TextEditorSample.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:TextFieldSample/TextFieldSample.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:TextSample/TextSample.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:LabelSample/LabelSample.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "container:SecureFieldSample/SecureFieldSample.xcodeproj">
+   </FileRef>
+</Workspace>
